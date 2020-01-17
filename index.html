@@ -3,5 +3,5 @@ layout: default
 ---
 
 {% for block in site.blocks %}
-    <div class="">{{ block.content | markdownify }}</div>
+    <div class="dblock block.name">{{ block.content | markdownify }}</div>
 {% endfor %}
