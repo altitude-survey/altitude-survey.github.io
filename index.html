@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+{% for block in site.blocks %}
+    <div class="">{{ block.content | markdownify }}</div>
+{% endfor %}
