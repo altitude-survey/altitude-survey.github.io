@@ -1,0 +1,29 @@
+---
+permalink: /_buildinfo
+title: "Информация по сборке"
+---
+build: {{ site.time }}<br/>
+{{ jekyll | jsonify }}<br/>
+
+<!--
+layout: {{ layout | jsonify  | newline_to_br | escape }}<hr>
+jekyll: {{ jekyll | jsonify  | newline_to_br | escape }}<hr>
+
+
+static_files: {{ site.static_files | jsonify | newline_to_br | escape }}<hr> -->
+<ul>
+{% for p in site.pages %}
+<li>{{p.place}} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} </li>
+{% endfor %}
+<hr/>
+{% for d in site.documents %}
+<li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
+{% endfor %}
+<hr/>
+{% for file in site.static_files %}
+<li><a href="{{ file.path}}">{{ file.path}}</a></li>
+{% endfor %}
+</ul>
+
+    
+
