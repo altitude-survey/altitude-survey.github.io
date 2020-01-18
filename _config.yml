@@ -1,2 +1,4 @@
 collections:
-  - blocks
+  blocks:
+    output: false
+

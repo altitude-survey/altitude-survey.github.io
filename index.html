@@ -4,5 +4,5 @@ layout: default
 
 <!-- index.html -->
 {% for block in site.blocks %}
-    <div class="dblock {{ block.name }}">{{ block.content | markdownify }}</div>
+    <div class="dblock {{ block.title | downcase }}">{{ block.content | markdownify }}</div>
 {% endfor %}
