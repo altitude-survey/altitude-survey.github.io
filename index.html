@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- index.html -->
 {% for block in site.blocks %}
     <div class="dblock {{ block.name }}">{{ block.content | markdownify }}</div>
 {% endfor %}
