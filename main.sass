@@ -1,17 +1,23 @@
 ---
 ---
 
+#main-space
+    display: grid
+    grid-auto-flow: dense
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr
+    grid-template-areas: . logo logo logo .
+    grid-gap: 10px 10px
+    justify-items: stretch 
+
 #top-logo
     background-image: url(/assets/img/top_logo.jpg)
     background-size: cover
-
-#main-space
-    display: grid
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr
-    grid-gap: 10px 10px
-    justify-items: stretch 
+    grid-area: logo
 
 .dblock
     border: solid 1px black
     display: flex
     justify-content: center
+
+@for $i from 1 through 5
+    .row-$i: grid-column: $i
