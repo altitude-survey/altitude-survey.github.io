@@ -3,6 +3,7 @@ layout: default
 ---
 
 <!-- index.html -->
+<div id="top-logo"></div>
 {% for block in site.blocks %}
-    <div class="dblock {{ block.title | downcase }}">{{ block.content | markdownify }}</div>
+    <div class="dblock" id="{{ block.title | downcase }}">{{ block.content | markdownify }}</div>
 {% endfor %}
