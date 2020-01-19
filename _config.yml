@@ -1,3 +1,6 @@
+timezone: Europe/Moscow
+
+
 collections:
   blocks:
     output: false
