@@ -3,7 +3,9 @@ layout: default
 ---
 
 <!-- index.html -->
+<div style="grid-area:empty1"></div>
 <div id="top-logo"></div>
+<div style="grid-area:empty2"></div>
 {% for block in site.blocks %}
     <div class="dblock row-{{ block.title | slice: 1 }}" id="{{ block.title | downcase }}">{{ block.content | markdownify }}</div>
 {% endfor %}
