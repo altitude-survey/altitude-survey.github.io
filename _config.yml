@@ -1,7 +1,13 @@
+---
+title: Altitude Survey.Github.Io
 timezone: Europe/Moscow
-
-
 collections:
   blocks:
+    title: Blocks
     output: false
-
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
