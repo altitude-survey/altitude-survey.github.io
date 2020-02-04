@@ -23,7 +23,8 @@ permalink: /survey
     <div style="grid-area:empty2"></div>
     {% assign page_blocks = site.blocks | where_exp: "item", "item.pages contains 'survey'" %}
     {% assign page_blocks_all = site.blocks | where_exp: "item", "item.pages == nil" %}
-    {% assign _blocks = page_blocks_all | concat: page_blocks  %}
+    {% assign _b = page_blocks_all | concat: page_blocks  %}
+    {% assign _blocks = _b | sort }
     <!-- {{ page_blocks | size }} + {{ page_blocks_all | size }} = {{ _blocks | size }} -->
     {% for block in _blocks %}
     <div class="dblock {{ block.css-class }} col-{{ block.title | slice: 1 }} row-{{ block.title | slice: 2 }}"
