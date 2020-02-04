@@ -1,7 +1,7 @@
 ---
 ---
 
-@media (max-width: 500px) 
+@media (max-width: 640px) 
     .col-1, .col-5 
         display: none
 
@@ -32,6 +32,13 @@ img
 .storey-2
     grid-row-end: span 2
 
+.cells-3
+    grid-column-end: span 3
+
+.right-float
+    float: right
+    width: 20%
+
 @for $i from 1 through 5
     .col-#{$i}
         grid-column: $i
@@ -50,6 +57,7 @@ nav
         
 
         li
+            text-align: center
             padding: 10px
             border-right: solid 3px black
     
