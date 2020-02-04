@@ -1,6 +1,6 @@
 ---
 css-class: "cells-3"
-pages: survey
+pages: "survey"
 ---
 
 ## Высотное Обследование.
