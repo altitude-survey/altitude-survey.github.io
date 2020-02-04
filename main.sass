@@ -11,7 +11,7 @@
 
 @media (min-width: 500px) 
     col-1, col-5 
-        display:none
+        display: none
     
              
 
@@ -34,7 +34,14 @@ img
     .col-#{$i}
         grid-column: $i
 
+
+$nav-color: #a4b1c0
+
 nav
+    background-color: $nav-color
     ul
-        display: flex 
+        display: flex
+
+        li
+            passing: 10px 
     
