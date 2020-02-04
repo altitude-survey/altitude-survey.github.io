@@ -20,7 +20,7 @@ layout: default
     <div style="grid-area:empty1"></div>
     <div id="top-logo"><img src="/assets/img/top_logo.jpg"></div>
     <div style="grid-area:empty2"></div>
-    {% for block in site.blocks | where_exp: "block.pages", "block.pages contains  'index' "%}
+    {% for block in site.blocks | where_exp: "pages", "pages contains  'index'" %}
     <div class="dblock {{ block.css-class }} col-{{ block.title | slice: 1 }} row-{{ block.title | slice: 2 }}"
         id="{{ block.title | downcase }}">{{ block.content | markdownify }}</div>
     {% endfor %}

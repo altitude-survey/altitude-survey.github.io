@@ -1,6 +1,6 @@
 ---
 css-class: "cells-3"
-pages: "index"
+pages: ["index"]
 ---
 
 <img src="/assets/img/mess.jpg" class="right-float">
