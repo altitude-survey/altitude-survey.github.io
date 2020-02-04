@@ -5,19 +5,19 @@ main:
   url: /
 
 - title: "Высотное обследование"
-  url: /survey/
+  url: /survey
 
 - title: "Обеспечение доступа"
-  url: /access/
+  url: /access
 
 - title: "Системы обеспечения безопасности работ на высоте"
-  url: /systems/
+  url: /systems
 
 - title: "Информация. Что такое высотное обследование"
-  url: /info/
+  url: /info
 
 - title: "Контакты"
-  url: /contacts/
+  url: /contacts
   
 
 
