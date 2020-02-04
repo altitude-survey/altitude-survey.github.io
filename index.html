@@ -3,9 +3,25 @@ layout: default
 ---
 
 <!-- index.html -->
-<div style="grid-area:empty1"></div>
-<div id="top-logo"><img src="/assets/img/top_logo.jpg"></div>
-<div style="grid-area:empty2"></div>
-{% for block in site.blocks %}
-    <div class="dblock {{ block.css-class }} col-{{ block.title | slice: 1 }} row-{{ block.title | slice: 2 }}" id="{{ block.title | downcase }}">{{ block.content | markdownify }}</div>
-{% endfor %}
+<nav>
+    <ul>
+        <li>logo</li>
+        {%- for link in site.data.navigation.main -%}
+        <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {%- endfor -%}
+        <lint>тел:+7(903)777-77-77<br>email@vo.ru</li>
+    </ul>
+    
+
+</nav>
+<div id="main-space">
+    <div style="grid-area:empty1"></div>
+    <div id="top-logo"><img src="/assets/img/top_logo.jpg"></div>
+    <div style="grid-area:empty2"></div>
+    {% for block in site.blocks %}
+    <div class="dblock {{ block.css-class }} col-{{ block.title | slice: 1 }} row-{{ block.title | slice: 2 }}"
+        id="{{ block.title | downcase }}">{{ block.content | markdownify }}</div>
+    {% endfor %}
+</div>

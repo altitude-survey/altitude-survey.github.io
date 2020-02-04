@@ -2,18 +2,11 @@
 ---
 
 #main-space
-    display: grid
-    grid-auto-flow: dense
+    display: grid    
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr
     grid-template-areas: "empty1 logo logo logo empty2"
     grid-gap: 10px 10px
-    justify-items: stretch
-
-@media (min-width: 500px) 
-    col-1, col-5 
-        display:none
-    
-             
+    justify-items: stretch 
 
 #top-logo
     grid-area: logo
@@ -33,8 +26,4 @@ img
 @for $i from 1 through 5
     .col-#{$i}
         grid-column: $i
-
-nav
-    ul
-        display: flex 
     
