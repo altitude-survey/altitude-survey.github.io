@@ -20,7 +20,7 @@ layout: default
     <div style="grid-area:empty1"></div>
     <div id="top-logo"><img src="/assets/img/top_logo.jpg"></div>
     <div style="grid-area:empty2"></div>
-    {% assign page_blocks = site.blocks | where_exp: "item", "item.pages contains 'index' or item.pages == nil" %} 
+    {% assign page_blocks = site.blocks  %} <!-- | where_exp: "item", "item.pages contains 'index' or item.pages == nil" -->
     
     {% for block in page_blocks %}
     <div class="dblock {{ block.css-class }} col-{{ block.title | slice: 1 }} row-{{ block.title | slice: 2 }}"
