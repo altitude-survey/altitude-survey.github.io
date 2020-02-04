@@ -1,5 +1,9 @@
 ---
 ---
+@media (max-width: 500px) 
+    col-1, col-5 
+        display: none
+
 
 #main-space
     display: grid
@@ -9,10 +13,7 @@
     grid-gap: 10px 10px
     justify-items: stretch
 
-@media (min-width: 500px) 
-    col-1, col-5 
-        display: none
-    
+
              
 
 #top-logo
@@ -40,8 +41,11 @@ $nav-color: #a4b1c0
 nav
     background-color: $nav-color
     ul
+        list-style: none
         display: flex
+        
 
         li
-            passing: 10px 
+            padding: 10px
+            border-right: solid 3px black
     
