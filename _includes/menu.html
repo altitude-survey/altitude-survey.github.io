@@ -3,7 +3,14 @@
         {% assign sort_pages = site.pages | sort: "sortid" %}
         {%- for p in sort_pages -%}
             {% if p.main %}
-                <li>{{p.sortid}} <a href="{{ p.url}}">{{ p.title }}</a> </li>
+                <li>
+                    {% if p.cat = page.cat %}
+                        <span>{{ p.title }}</span>
+                    {% else %}
+                        <a href="{{ p.url}}">{{ p.title }}</a>
+                    {% endif %}
+                </li>
+                
             {% endif %}
         {%- endfor -%}
     </ul>
@@ -13,7 +20,13 @@
         <ul>
             {%- for p in sort_pages -%}
                 {% if p.cat == page.cat %}
-                    <li>{{p.sortid}} <a href="{{ p.url}}">{{ p.title }}</a> </li>
+                    <li>
+                        {% if p.url = page.url %}
+                            <span>{{ p.title }}</span>
+                        {% else %}
+                            <a href="{{ p.url}}">{{ p.title }}</a> 
+                        {% endif %}                         
+                    </li>
                 {% endif %}
             {%- endfor -%}
         </ul>
