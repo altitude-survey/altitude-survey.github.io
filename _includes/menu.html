@@ -1,17 +1,18 @@
 <nav>
     <ul>
-        {%- for p in site.pages -%}
+        {% assign sort_pages = site.pages | sort: "sortid" %}
+        {%- for p in sort_pages -%}
             {% if p.main %}
-                <li><a href="{{ p.url}}">{{ p.title }}</a> </li>
+                <li>{{p.sortid}} <a href="{{ p.url}}">{{ p.title }}</a> </li>
             {% endif %}
         {%- endfor -%}
     </ul>
 </nav>
 <nav>
     <ul>
-        {%- for p in site.pages -%}
+        {%- for p in sort_pages -%}
         {% if p.cat == page.cat %}
-            <li><a href="{{ p.url}}">{{ p.title }}</a> </li>
+            <li>{{p.sortid}} <a href="{{ p.url}}">{{ p.title }}</a> </li>
         {% endif %}
         {%- endfor -%}
     </ul>
