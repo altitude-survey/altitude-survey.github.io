@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- new layout -->
+<html>
+<head>
+    <link rel="stylesheet" href="/new1.css">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include menu.html %}
+    <div id="main-space">
+        {{ content }}
+    </div>
+    <hr>
+    {{ site.time }}       
+</body>
+</html>

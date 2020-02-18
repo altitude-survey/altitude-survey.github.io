@@ -5,9 +5,13 @@ collections:
   blocks:
     title: Blocks
     output: false
-  posts:
-    title: Posts
+  v2:
+    title: V2
     output: true
-  uploads:
-    title: Uploads
-    output: true
+
+defaults:
+  -
+    scope:
+      path: "v2" # an empty string here means all files in the project
+    values:
+      layout: "uni"
