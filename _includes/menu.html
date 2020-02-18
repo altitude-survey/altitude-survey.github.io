@@ -10,7 +10,7 @@
 <nav>
     <ul>
         {%- for p in site.pages -%}
-        {% if p.cat==page.cat %}
+        {% if p.cat == page.cat %}
             <li><a href="{{ p.url}}">{{ p.title }}</a> </li>
         {% endif %}
         {%- endfor -%}
