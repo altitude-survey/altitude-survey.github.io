@@ -8,6 +8,7 @@ collections:
   v2:
     title: V2
     output: true
+    sort_by: sortid
 
 defaults:
   -
