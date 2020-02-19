@@ -4,7 +4,7 @@
         {%- for p in sort_pages -%}
             {% if p.main %}
                 <li>
-                    {% if p.cat = page.cat %}
+                    {% if p.cat == page.cat %}
                         <span>{{ p.title }}</span>
                     {% else %}
                         <a href="{{ p.url}}">{{ p.title }}</a>
@@ -21,7 +21,7 @@
             {%- for p in sort_pages -%}
                 {% if p.cat == page.cat %}
                     <li>
-                        {% if p.url = page.url %}
+                        {% if p.url == page.url %}
                             <span>{{ p.title }}</span>
                         {% else %}
                             <a href="{{ p.url}}">{{ p.title }}</a> 
