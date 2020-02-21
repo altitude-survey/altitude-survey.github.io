@@ -10,6 +10,10 @@ nav
         position: sticky
         top: 0
         background-color: $main-color
+
+        li:hover
+            background-color: darken($main-color,20%)
+
     &#sub        
         background-color: $bg-color
 
@@ -28,7 +32,7 @@ nav
         list-style: none
         display: flex
         justify-content: space-around
-        // padding-inline-start: 0 // 
+        padding-inline-start: 0 // 
 
         li
             padding: 10px
