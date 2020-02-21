@@ -1,4 +1,4 @@
-<nav>
+<nav id="main">
     <ul>
         {% assign sort_pages = site.pages | sort: "sortid" %}
         {%- for p in sort_pages -%}
@@ -16,7 +16,7 @@
     </ul>
 </nav>
 {%- if page.submenu -%}
-    <nav>
+    <nav id="sub">
         <ul>
             {%- for p in sort_pages -%}
                 {% if p.cat == page.cat %}
