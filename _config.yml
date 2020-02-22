@@ -1,6 +1,10 @@
 ---
 title: Altitude Survey.Github.Io
 timezone: Europe/Moscow
+
+sass:
+    sourcemap: true
+    
 collections:
   blocks:
     title: Blocks
