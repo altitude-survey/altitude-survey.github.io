@@ -16,12 +16,12 @@ nav
         li.act
             color: $main-color
             background-color: $color
-            
-
-        li:hover
-            background-color: darken($main-color,20%)
         a
-            color: $color
+            color: $color            
+
+        li:hover:not(.act)
+            background-color: darken($main-color,20%)
+        
 
 
     &#sub        
