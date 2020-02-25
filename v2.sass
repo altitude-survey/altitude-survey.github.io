@@ -9,11 +9,15 @@ nav
     &#main
         position: sticky
         top: 0
-        color: white
+        $color: white
+        color: $color
         background-color: $main-color
 
         li:hover
             background-color: darken($main-color,20%)
+        a
+            color: $color
+
 
     &#sub        
         background-color: $bg-color
