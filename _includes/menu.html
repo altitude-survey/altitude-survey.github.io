@@ -20,11 +20,14 @@
         <ul>
             {%- for p in sort_pages -%}
                 {% if p.cat == page.cat and p.main != true %}
-                    <li>
-                        {% if p.url == page.url %}
+                    {% if p.url == page.url %}
+                        <li class="act">                        
                             <span>{{ p.title }}</span>
-                        {% else %}
+                        </li>
+                    {% else %}
+                        <li>
                             <a href="{{ p.url}}">{{ p.title }}</a> 
+                        </li>    
                         {% endif %}                         
                     </li>
                 {% endif %}
