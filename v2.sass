@@ -27,15 +27,22 @@ nav
             border: solid 1px black            
             flex-grow: 1
             text-align: center
-            background-color: darken($bg-color,10%)
+            background-color: $bg-color
+            
+
+            &:not(.act)
+                background-color: darken($bg-color,10%)
+
+                &:hover
+                    background-color: darken($bg-color,30%)
+
         
             &.act
                 border-bottom: none
-                background-color: $bg-color
+                
 
 
-            &:hover
-                background-color: darken($bg-color,30%)
+            
 
             
     ul
