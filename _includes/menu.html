@@ -19,7 +19,7 @@
     <nav id="sub">
         <ul>
             {%- for p in sort_pages -%}
-                {% if p.cat == page.cat %}
+                {% if p.cat == page.cat and p.main != true %}
                     <li>
                         {% if p.url == page.url %}
                             <span>{{ p.title }}</span>
