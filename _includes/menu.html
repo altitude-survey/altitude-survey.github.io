@@ -2,15 +2,16 @@
     <ul>
         {% assign sort_pages = site.pages | sort: "sortid" %}
         {%- for p in sort_pages -%}
-            {% if p.main %}
-                <li>
-                    {% if p.cat == page.cat %}
+            {% if p.main %}                
+                {% if p.cat == page.cat %}
+                    <li class="act">
                         <span>{{ p.title }}</span>
-                    {% else %}
+                    </li>
+                {% else %}
+                    <li>
                         <a href="{{ p.url}}">{{ p.title }}</a>
-                    {% endif %}
-                </li>
-                
+                    </li>
+                {% endif %}                
             {% endif %}
         {%- endfor -%}
     </ul>
