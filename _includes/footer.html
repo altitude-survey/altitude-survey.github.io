@@ -1,1 +1,30 @@
 ﻿<-- footer -->
+<footer>
+    <div>
+        {% include about.md %}
+    </div>
+    <div>
+        {% assign sort_pages = site.pages | sort: "sortid" %}
+        <ul>
+            {%- for hi in sort_pages -%}
+                {% if hi.main %}
+                    <li>
+                        <a href="{{ hi.url}}">{{ hi.title }}</a>
+                        <ul>
+                            {%- for lo in sort_pages -%}
+                                {% if lo.cat == hi.cat and lo.main != true %}
+                                    <li>
+                                        <a href="{{ lo.url}}">{{ lo.title }}</a>
+                                    </li>
+                                {% endif %}
+                            {%- endfor -%}
+                        </ul>                    
+                    </li>
+                {% endif %}
+            {%- endfor -%}
+        </ul>
+    </div>
+    <div>
+        {% include contacts.md %}
+    </div>
+</footer>
