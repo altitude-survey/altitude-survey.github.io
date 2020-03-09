@@ -1,4 +1,4 @@
 ﻿{% capture my_include %}
 	{% include {{ include.file_name }} %}
 {% endcapture %}
-{{ my_include | markdownify }}
+<!-- [[ --> {{ my_include | markdownify }} <!-- ]]  -->
