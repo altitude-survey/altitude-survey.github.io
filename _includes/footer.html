@@ -1,10 +1,10 @@
 ﻿<!-- footer -->
 <footer>
     <div>
-        {% include include_md().html file_name="about.md" %}
+        {% include include_md.html file_name="about.md" %}
     </div>
     <div>
-        {% include include_md().html file_name="sitemap.md" %}
+        {% include include_md.html file_name="sitemap.md" %}
         {% assign sort_pages = site.pages | sort: "sortid" %}
         <ul>
             {%- for hi in sort_pages -%}
@@ -26,6 +26,6 @@
         </ul>
     </div>
     <div>
-        {% include include_md().html file_name="contacts.md" %}
+        {% include include_md.html file_name="contacts.md" %}
     </div>
 </footer>
