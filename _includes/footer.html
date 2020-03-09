@@ -4,6 +4,7 @@
         {% include about.md %}
     </div>
     <div>
+        {% include sitemap.md %}
         {% assign sort_pages = site.pages | sort: "sortid" %}
         <ul>
             {%- for hi in sort_pages -%}
