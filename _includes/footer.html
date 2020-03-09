@@ -1,7 +1,9 @@
 ﻿<!-- footer -->
 <footer>
     <div>
-        {% include about.md | markdownify %}
+        {% markdown %}
+            {% include about.md %}
+        {% endmarkdown %}
     </div>
     <div>
         {% include include_md.html file_name="sitemap.md" %}
