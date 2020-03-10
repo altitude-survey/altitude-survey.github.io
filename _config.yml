@@ -4,19 +4,11 @@ timezone: Europe/Moscow
 
 sass:
     sourcemap: true
-    
-collections:
-  blocks:
-    title: Blocks
-    output: false
-  v2:
-    title: V2
-    output: true
-    sort_by: sortid
+  
 
 defaults:
   -
     scope:
-      path: "v2" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
     values:
       layout: "uni"
