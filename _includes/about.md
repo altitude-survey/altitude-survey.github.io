@@ -1,3 +1,13 @@
-﻿### О компании:
+﻿### О компании: 
+Компания «Высотное-Обследование» имеет большой опыт работы на высоте.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lacus vulputate, mattis orci at, malesuada arcu. Ut quam neque, feugiat quis eleifend eu, interdum at justo. Nam vel vulputate diam, et auctor arcu. In nec mi ac velit sodales pellentesque. Pellentesque venenatis aliquam metus, ut gravida sem ultricies eget. Nullam fringilla, mi ac feugiat posuere, dui felis scelerisque odio, ac tempus diam risus quis metus. In ornare massa in risus maximus, et consectetur odio efficitur. Maecenas pellentesque nunc iaculis aliquam vehicula. Aliquam non arcu dolor. Suspendisse potenti. Maecenas lectus arcu, porttitor id neque a, vestibulum aliquet quam. Sed malesuada, libero vel feugiat fringilla, sapien est pellentesque ligula, eu iaculis nibh est sit amet est. Nunc ac placerat odio, placerat tincidunt velit. Pellentesque a sollicitudin massa.
+Основными направлениями нашей работы является:
+1. Инспекция промышленных, строительных и жилых объектов.
+2. Специализируемся на подготовке доступа и решений, предоставляя нашим клиентам экономически эффективные пути проникновения в места, которые находятся вне досягаемости с помощью обычных методов доступа. 
+
+Руководство компании в этой области во многом связано с:
+- Высококвалифицированным и опытным персоналом.
+- Общее понимание методов доступа
+- Конкурентоспособные цены
+- Скорость реагирования на потребности наших клиентов
+- Индивидуальный подход.
