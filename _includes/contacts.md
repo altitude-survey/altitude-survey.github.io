@@ -1,3 +1,5 @@
 ﻿### Контакты:
 
-Curabitur elementum ligula justo, volutpat facilisis tellus convallis ut. Maecenas pretium tincidunt interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus cursus rutrum sem non blandit. Donec vitae aliquet dui. Cras tortor elit, ullamcorper id finibus nec, luctus a purus. Vivamus commodo metus in semper placerat. Pellentesque neque elit, facilisis ac convallis quis, porta vitae est. Phasellus in imperdiet purus. Pellentesque luctus porta eros, vitae molestie metus facilisis ac. Quisque convallis sapien vel metus blandit semper. Vivamus vestibulum nulla nec imperdiet pretium. Nam eget congue elit. Praesent ut tincidunt eros, at condimentum libero. Nulla et urna non dolor mattis ultricies. Fusce nisi sapien, euismod sed urna eget, eleifend feugiat ipsum.
+* {% for p in site.data.var.phones %}<a href="tel:{{ p }}">{{ p }}</a>&nbsp;{% endfor %}
+* {{ site.data.var.address }}
+* <a href="mailto:{{ site.data.var.email }}">{{ site.data.var.email }}</a>
