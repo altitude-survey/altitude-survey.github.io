@@ -1,10 +1,11 @@
 ---
 title: Информация по сборке
 permalink: "/_buildinfo"
+layout: default
 ---
 
 build: {{ site.time }}<br/>
-{{ jekyll | jsonify }}<br/>
+jekyll: {{ jekyll | jsonify }}<br/>
 
 <!--
 layout: {{ layout | jsonify  | newline_to_br | escape }}<hr>
