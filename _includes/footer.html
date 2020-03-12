@@ -12,7 +12,7 @@
             {%- for hi in sort_pages -%}
                 {% if hi.main %}
                     <li>
-                        <a href="{{ hi.url}}">{{ hi.title }}</a>
+                        <a href="{{ hi.url}}"><nobr>{{ hi.title }}</nobr></a>
                         <ul>
                             {%- for lo in sort_pages -%}
                                 {% if lo.cat == hi.cat and lo.main != true %}
