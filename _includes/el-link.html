@@ -1,2 +1,5 @@
 ﻿{%- for p in site.pages -%}
+    {%- if include.name == p.name -%}
+        <a href="{{ p.url}}">{{ p.title}} </a>
+    {%- endif -%}}
 {%- endfor -%}

@@ -17,7 +17,7 @@
                             {%- for lo in sort_pages -%}
                                 {% if lo.cat == hi.cat and lo.main != true %}
                                     <li>
-                                        <a href="{{ lo.url}}">{{ lo.title }}</a>
+                                        <a href="{{ lo.url}}"><nobr>{{ lo.title }}</nobr></a>
                                     </li>
                                 {% endif %}
                             {%- endfor -%}
