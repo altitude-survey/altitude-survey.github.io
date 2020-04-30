@@ -7,12 +7,6 @@ layout: default
 build: {{ site.time }}<br/>
 jekyll: {{ jekyll | jsonify }}<br/>
 
-<!--
-layout: {{ layout | jsonify  | newline_to_br | escape }}<hr>
-jekyll: {{ jekyll | jsonify  | newline_to_br | escape }}<hr>
-
-
-static_files: {{ site.static_files | jsonify | newline_to_br | escape }}<hr> -->
 <ul>
 {% for p in site.pages %}
 <li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} </li>
@@ -27,5 +21,8 @@ static_files: {{ site.static_files | jsonify | newline_to_br | escape }}<hr> -->
 {% endfor %}
 </ul>
 
+<!--
+static_files: {{ site.static_files | jsonify | newline_to_br | escape }}<hr> 
+-->
     
 
