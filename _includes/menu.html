@@ -12,7 +12,7 @@
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                             {%- for s in sort_pages -%}
-                                                {% if s.main != true and s.cat == page.cat %}
+                                                {% if s.main != true and s.cat == p.cat %}
                                                     <li>
                                                         <a href="{{ s.url}}">{{ s.title }}</a>
                                                     </li>
