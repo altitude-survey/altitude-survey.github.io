@@ -4,6 +4,8 @@ timezone: Europe/Moscow
 
 sass:
     sourcemap: true
+
+include: ["./index.json"]
    
 
 defaults:
