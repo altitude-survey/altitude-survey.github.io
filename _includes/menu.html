@@ -6,14 +6,14 @@
                 {%- for p in sort_pages -%}
                     {% if p.main %}                        
                         <li class="uk-active">                            
-                            <a href="{{ p.url }}" class="uk-button>{{ p.title }}</a>
+                            <a href="{{ p.url }}" class="uk-button-text>{{ p.title }}</a>
                             {% if p.submenu %}
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         {%- for s in sort_pages -%}
                                             {% if s.main != true and s.cat == p.cat %}
                                                 <li>
-                                                    <a href="{{ s.url}}" class="uk-button">{{ s.title }}</a>
+                                                    <a href="{{ s.url}}" class="uk-button-text">{{ s.title }}</a>
                                                 </li>
                                             {% endif %} 
                                         {%- endfor -%}
