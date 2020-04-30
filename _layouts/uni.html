@@ -10,17 +10,18 @@
 </head>
 <body>
     {% include menu.html %}    
-    {% if page.cat < 4 %}
-        <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
-    {% endif %}
+    
 
     <main class="uk-container">
-            <article class="uk-article">
-                    {% if page.cat != 0 %}
-                        <h1 class="uk-article-title">{{ page.title }}</h1>
-                    {% endif %}
-                    {{ content }}
-            </article>
+        {% if page.cat < 4 %}
+            <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
+        {% endif %}
+        <article class="uk-article">
+                {% if page.cat != 0 %}
+                    <h1 class="uk-article-title">{{ page.title }}</h1>
+                {% endif %}
+                {{ content }}
+        </article>
         {% if page.cat %}
             <hr class="uk-margin-medium"/>            
             <div class="uk-animation-toggle" tabindex="0">
