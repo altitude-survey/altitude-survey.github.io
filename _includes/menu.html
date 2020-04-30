@@ -1,5 +1,5 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container" uk-navbar>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-left nav-overlay">
             <ul class="uk-navbar-nav">
                 {% assign sort_pages = site.pages | sort: "sortid" %}
@@ -19,15 +19,17 @@
             </ul>
         </div>
 
-        <div class="uk-navbar-right">
-            <div>
-                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-                <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                    <form class="uk-search uk-search-navbar uk-width-1-1">
-                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                    </form>
-                </div>
-            </div>        
+        <div class="nav-overlay uk-navbar-right">
+            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+        
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>    
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                </form>
+            </div>    
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>      
         </div>
 
     </nav>
