@@ -5,7 +5,7 @@
         <a href="/">Home</a>
     </li>    
     {%- for p in sort_pages -%}
-        {% if page.cat == 0 or  p.main and page.cat == p.cat and page.url != p.url  %}
+        {% if page.cat == 0 or ( p.main and page.cat == p.cat and page.url != p.url )  %}
             <li>
                 <!--  {{ page.cat }} / {{ p.main }} / {{ page.main }} -->
                 <a href="{{ p.url}}">{{ p.title }}</a>
