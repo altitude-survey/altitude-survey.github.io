@@ -10,7 +10,7 @@
                 <!--  {{ page.cat }} / {{ p.main }} / {{ page.main }} -->
                 <a href="{{ p.url}}">{{ p.title }}</a>
             </li>
-        {% enif %}        
+        {% endif %}        
     {%- endfor -%}
         
     {%- for p in sort_pages -%}
