@@ -1,0 +1,30 @@
+{% assign sort_pages = site.pages | sort: "sortid" %}
+<ul class="uk-breadcrumb">
+    <li>
+        <a href="/">Home</a>
+    </li>    
+    {%- for p in sort_pages -%}
+        {% if p.main %}                
+            {% if p.cat == page.cat %}
+                <li>
+                    <a href="{{ p.url}}">{{ p.title }}</a>
+                </li>
+            {% else %}                
+            {% endif %}                
+        {% endif %}
+    {%- endfor -%}
+    {%- if page.submenu -%}    
+        <ul>
+            {%- for p in sort_pages -%}
+                {% if p.cat == page.cat and p.main != true %}
+                    {% if p.url == page.url %}
+                        <li>                        
+                            <span>{{ p.title }}</span>
+                        </li>
+                    {% else %}                           
+                    {% endif %}
+                {% endif %}
+            {%- endfor -%}
+        </ul>    
+{% endif %}
+</ul>

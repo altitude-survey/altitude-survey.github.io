@@ -1,10 +1,10 @@
-<nav id="main">
-    <ul>
+<nav class="uk-navbar-container" uk-navbar>
+    <ul class="uk-navbar-nav">
         {% assign sort_pages = site.pages | sort: "sortid" %}
         {%- for p in sort_pages -%}
             {% if p.main %}                
                 {% if p.cat == page.cat %}
-                    <li class="act">
+                    <li class="uk-active">
                         <span>{{ p.title }}</span>
                     </li>
                 {% else %}
@@ -18,19 +18,18 @@
 </nav>
 {%- if page.submenu -%}
     <nav id="sub">
-        <ul>
+        <ul class="uk-subnav uk-subnav-pill">
             {%- for p in sort_pages -%}
                 {% if p.cat == page.cat and p.main != true %}
                     {% if p.url == page.url %}
-                        <li class="act">                        
+                        <li class="uk-active">                        
                             <span>{{ p.title }}</span>
                         </li>
                     {% else %}
                         <li>
                             <a href="{{ p.url}}">{{ p.title }}</a> 
                         </li>    
-                        {% endif %}                         
-                    </li>
+                        {% endif %}
                 {% endif %}
             {%- endfor -%}
         </ul>

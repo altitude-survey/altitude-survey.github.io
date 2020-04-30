@@ -9,7 +9,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 
 <ul>
 {% for p in site.pages %}
-<li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} </li>
+<li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }}/{{ p.layout }} </li>
 {% endfor %}
 <hr/>
 {% for d in site.documents %}
