@@ -16,7 +16,9 @@
     </div>
     <main class="uk-container">
             <article class="uk-article">
-                    <h1 class="uk-article-title">{{ page.title }}</h1>
+                    {% if page.cat != 0 %}
+                        <h1 class="uk-article-title">{{ page.title }}</h1>
+                    {% endif %}
                     {{ content }}
             </article>        
         <div class="uk-animation-toggle" tabindex="0">
