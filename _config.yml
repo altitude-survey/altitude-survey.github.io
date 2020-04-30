@@ -5,6 +5,8 @@ timezone: Europe/Moscow
 sass:
     sourcemap: true
 
+include: ["*.liquid"]
+
    
 
 defaults:
