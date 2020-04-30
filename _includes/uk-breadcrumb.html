@@ -1,7 +1,7 @@
 {% assign sort_pages = site.pages | sort: "sortid" %}
 <ul class="uk-breadcrumb"> 
     {%- for p in sort_pages -%}
-        {% if p.cat == 0 or p.main and page.cat == p.cat and page.url != p.url and page.cat != 0  %}
+        {% if p.cat == 0 and page.cat != 0 or p.main and page.cat == p.cat and page.url != p.url    %}
             <li>
                 <!--  {{ page.cat }} / {{ p.main }} / {{ page.main }} -->
                 <a href="{{ p.url}}">{{ p.title }}</a>
@@ -10,7 +10,7 @@
     {%- endfor -%}
         
     {%- for p in sort_pages -%}
-        {% if p.url == page.url  and page.cat != 0 %}            
+        {% if p.url == page.url  %}            
             <li>                        
                 <span>{{ p.title }}</span>
             </li>     
