@@ -4,10 +4,12 @@ layout: null
 
 var store = [
     {%- for doc in site.pages -%}
-	{%- if doc.place and doc.place != '404'-%}
-           {%- else -%}
-		{% continue %}
-	{%- endif -%}
+      {% comment %}  
+        {%- if doc.place and doc.place != '404'-%}
+        {%- else -%}
+		      {% continue %}
+	      {%- endif -%}
+      {% endcomment %}
       {%- if doc.header.teaser -%}
         {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture -%}
       {%- else -%}
