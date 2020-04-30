@@ -12,10 +12,13 @@
     {% include menu.html %}
     {% include uk-breadcrumb.html %}
     <div id="top-logo">
-        <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-center">
+        <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
     </div>
     <main class="uk-container">
-        {{ content }}
+            <article class="uk-article">
+                    <h1 class="uk-article-title">page.title</h1>
+                    {{ content }}
+            </article>        
         <div class="uk-animation-toggle" tabindex="0">
             <div class="uk-align-center uk-box-shadow-medium uk-animation-shake uk-text-center">
                 Для получения достоверной информации, Вам необходимо профессионально обследовать ваш объект.<br>   Свяжитесь с нами!
