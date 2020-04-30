@@ -20,12 +20,14 @@
                         <h1 class="uk-article-title">{{ page.title }}</h1>
                     {% endif %}
                     {{ content }}
-            </article>        
-        <div class="uk-animation-toggle" tabindex="0">
-            <div class="uk-background-primary uk-align-center uk-box-shadow-medium uk-animation-shake uk-text-center">
-                Для получения достоверной информации, Вам необходимо профессионально обследовать ваш объект.<br>   Свяжитесь с нами!
+            </article>
+        {% if page.cat %}            
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-background-primary uk-align-center uk-box-shadow-medium uk-animation-shake uk-text-center">
+                    Для получения достоверной информации, Вам необходимо профессионально обследовать ваш объект.<br>   Свяжитесь с нами!
+                </div>
             </div>
-        </div>
+        {% endif %}
     </main>
     {{ site.time }}
     {% include footer.html %}   
