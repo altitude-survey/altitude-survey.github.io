@@ -1,6 +1,6 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
+        <div class="uk-navbar-left nav-overlay">
             <ul class="uk-navbar-nav">
                 {% assign sort_pages = site.pages | sort: "sortid" %}
                 {%- for p in sort_pages -%}
