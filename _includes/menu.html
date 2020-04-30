@@ -8,6 +8,19 @@
                         {% if p.cat == page.cat %}
                             <li class="uk-active">
                                 <a>{{ p.title }}</a>
+                                {% if p.submenu %}
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            {%- for s in sort_pages -%}
+                                                {% if s.main != true and s.cat == page.cat %}
+                                                    <li>
+                                                        <a href="{{ s.url}}">{{ s.title }}</a>
+                                                    </li>
+                                                {% endif %} 
+                                            {%- endfor -%}
+                                        </ul>
+                                    </div>                                    
+                                {% endif %}
                             </li>
                         {% else %}
                             <li>
@@ -34,6 +47,7 @@
 
     </nav>
 </div>
+{% include uk-breadcrumb.html %}
     {%- if page.submenu -%}
         <nav id="sub">
             <ul class="uk-subnav uk-subnav-divider uk-subnav-pill" uk-margin>
