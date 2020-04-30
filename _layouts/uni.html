@@ -10,9 +10,10 @@
 </head>
 <body>
     {% include menu.html %}    
-    <div id="top-logo">
+    {% if page.cat > 0 and page.cat < 4 %}
         <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
-    </div>
+    {% endif %}
+
     <main class="uk-container">
             <article class="uk-article">
                     {% if page.cat != 0 %}
