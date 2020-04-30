@@ -36,12 +36,12 @@
 </div>
     {%- if page.submenu -%}
         <nav id="sub">
-            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+            <ul class="uk-subnav uk-subnav-divider uk-subnav-pill" uk-margin>
                 {%- for p in sort_pages -%}
                     {% if p.cat == page.cat and p.main != true %}
                         {% if p.url == page.url %}
                             <li class="uk-active">                        
-                                <span>{{ p.title }}</span>
+                                <a>{{ p.title }}</a>
                             </li>
                         {% else %}
                             <li>
