@@ -20,7 +20,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
         <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
     {% endfor %}
 </ul>
-<hr />
+
 
 <h3>Static files:</h3>
 <ul>
@@ -28,12 +28,22 @@ jekyll: {{ jekyll | jsonify }}<br/>
         <li><a href="{{ file.path}}">{{ file.path}}</a></li>
     {% endfor %}
 </ul>
-<hr />
 
 <h3>Collections:</h3>
 <ul>
     {% for col in site.collections %}
-        <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}</a></li>
+        <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
+            <ul>
+                {% for d in col.docs %}
+                    <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for f in col.files %}
+                    <li><a href="{{ f.path}}">{{ f.path}}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
     {% endfor %}
 </ul>
 
