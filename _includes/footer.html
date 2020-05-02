@@ -2,10 +2,10 @@
 <div class="uk-section-default">
     <div class="uk-section uk-light uk-background-cover" style="background-image: url(/img/footer.jpg)">
         <div class="uk-container uk-flex">
-            <div>  
+            <div class="uk-width-1-3">  
                     {% include include_md.html file_name="about.md" %}                
             </div>
-            <div>
+            <div class="uk-width-1-3">
                 {% include include_md.html file_name="sitemap.md" %}
                 {% assign sort_pages = site.pages | sort: "sortid" %}
                 <ul>
@@ -27,7 +27,7 @@
                     {%- endfor -%}
                 </ul>
             </div>
-            <div>
+            <div class="uk-width-1-3">
                 {% include include_md.html file_name="contacts.md" %}
             </div>
         </div>
