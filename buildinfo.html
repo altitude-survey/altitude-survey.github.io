@@ -59,9 +59,9 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <h3>Variables:</h3>
 <ul>
     {% for var in site %}
-        {% unless site.first %}
+        {% unless var.first %}
         <li>site.{{ var }} = {{ site[var] }}</li>            
-        {% endunless %}}        
+        {% endunless %}        
     {% endfor%}
 </ul>
 
