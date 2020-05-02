@@ -10,7 +10,7 @@ plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag
 
-collections_dir: _collections
+collections_dir: collections
 
 
 defaults:
