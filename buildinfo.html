@@ -30,6 +30,13 @@ jekyll: {{ jekyll | jsonify }}<br/>
     {% endfor %}
 </ul>
 
+<h3>Site data:</h3>
+<ul>
+    {% for d in site.data %}
+        <li>{{ d }} = {{ site.data[d] }} </li>
+    {% endfor %}
+</ul>
+
 <h3>Collections:</h3>
 <ul>
     {% for col in site.collections %}
@@ -46,6 +53,14 @@ jekyll: {{ jekyll | jsonify }}<br/>
             </ul>
         </li>
     {% endfor %}
+</ul>
+
+
+<h3>Variables:</h3>
+<ul>
+    {% for var in site %}
+        <li>site.{{ var }} = {{ site[var] }}</li>
+    {% endfor%}
 </ul>
 
 
