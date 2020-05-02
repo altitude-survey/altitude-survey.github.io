@@ -5,6 +5,7 @@
             <div class="uk-width-1-3">  
                     {% include include_md.html file_name="about.md" %}                
             </div>
+            <hr class="uk-divider-vertical">
             <div class="uk-width-1-3">
                 {% include include_md.html file_name="sitemap.md" %}
                 {% assign sort_pages = site.pages | sort: "sortid" %}
@@ -27,6 +28,7 @@
                     {%- endfor -%}
                 </ul>
             </div>
+            <hr class="uk-divider-vertical">
             <div class="uk-width-1-3">
                 {% include include_md.html file_name="contacts.md" %}
             </div>
