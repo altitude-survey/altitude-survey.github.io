@@ -31,13 +31,10 @@ jekyll: {{ jekyll | jsonify }}<br/>
 </ul>
 
 <h3>Site data:</h3>
-<ul>
-    {% for d in site.data %}
-        <li>{{ d }} = {{ site.data[d] }} </li>
-    {% endfor %}
-</ul>
+{{ site.data | jsonify }}   
 
 <h3>Collections:</h3>
+{{ site.collections | jsonify }}
 <ul>
     {% for col in site.collections %}
         <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
