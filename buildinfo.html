@@ -7,19 +7,37 @@ layout: default
 build: {{ site.time }}<br/>
 jekyll: {{ jekyll | jsonify }}<br/>
 
+<h3>Pages:</h3>
 <ul>
-{% for p in site.pages %}
-<li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} [{{ p.layout }}] </li>
-{% endfor %}
-<hr/>
-{% for d in site.documents %}
-<li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
-{% endfor %}
-<hr/>
-{% for file in site.static_files %}
-<li><a href="{{ file.path}}">{{ file.path}}</a></li>
-{% endfor %}
+    {% for p in site.pages %}
+        <li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} [{{ p.layout }}] </li>
+    {% endfor %}
 </ul>
+
+<h3>Documents:</h3>
+<ul>
+    {% for d in site.documents %}
+        <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
+    {% endfor %}
+</ul>
+<hr />
+
+<h3>Static files:</h3>
+<ul>
+    {% for file in site.static_files %}
+        <li><a href="{{ file.path}}">{{ file.path}}</a></li>
+    {% endfor %}
+</ul>
+<hr />
+
+<h3>Collections:</h3>
+<ul>
+    {% for col in site.collections %}
+        <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}</a></li>
+    {% endfor %}
+</ul>
+
+
 
     
 
