@@ -11,7 +11,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <h3>Pages:</h3>
 <ul>
     {% for p in site.pages %}
-        <li>{{ p.sortid }} <a href="{{ p.url}}">{{ p.url}}</a> &ndash; {{ p.title }} [{{ p.layout }}] </li>
+        <li>{{ p.sortid }} <a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a> &ndash; {{ p.title }} [{{ p.layout }}] </li>
     {% endfor %}
 </ul>
 
