@@ -46,7 +46,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
             <hr/>
             <ul>
                 {% for f in col.files %}
-                    <li><a href="{{ f.path}}">{{ f.path}}</a></li>
+                    <li><a href="{{ f.url}}">{{ f.url}}</a></li>
                 {% endfor %}
             </ul>
         </li>
