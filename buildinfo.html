@@ -9,11 +9,23 @@ build: {{ site.time }}<br/>
 jekyll: {{ jekyll | jsonify }}<br/>
 
 <h3>Pages:</h3>
-<ul>
-    {% for p in site.pages %}
-        <li>{{ p.sortid }} <a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a> &ndash; {{ p.title }} [{{ p.layout }}] </li>
+<table>
+    {% assign sort_pages = site.pages | sort: "sortid" %}
+    {% for p in sort_pages %}
+        <tr>
+            <td>
+                {{ p.cat }}
+                {% if p.main %}☑{% endif %}
+                {% if p.submenu %}🍔{% endif %}
+            </td>
+            <td>{{ p.sortid }}</td>
+            <td>{{ p.title }}</td>
+            <td><a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a></td>
+            <td>{{ p.layout }}</td>            
+        </tr>
     {% endfor %}
-</ul>
+
+</table>
 
 <h3>Documents:</h3>
 <ul>
