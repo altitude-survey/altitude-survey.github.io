@@ -13,8 +13,8 @@ plugins:
   # - jekyll-seo-tag
 
 collections:
-- gal_3.1:
-    output: true
+  - gal_3.1:
+      output: true
 
 
 
