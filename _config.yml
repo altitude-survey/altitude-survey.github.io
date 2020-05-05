@@ -2,7 +2,6 @@
 title: Altitude Survey.Github.io v0.2
 timezone: Europe/Moscow
 
-collections_dir: collections
 
 sass:
   style: compressed
@@ -11,12 +10,6 @@ sass:
 plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag
-
-collections:
-  gal_3.1:
-    output: true
-
-
 
 
 defaults:
