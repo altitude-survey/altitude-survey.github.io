@@ -12,9 +12,9 @@ plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag
 
-collections:
-  - "gal_3.1":
-      p1 : v1
+# collections:
+#   - "gal_3.1":
+#       p1 : v1
 
 
 
