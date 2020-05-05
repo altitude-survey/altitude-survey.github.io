@@ -1,7 +1,10 @@
+
+<!-- (img/gal{{ page.sortid }})-->
 <div uk-slider="autoplay: true;autoplay-interval: 1500">
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
         <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
             {% for i in site.static_files %}
+                <!-- i.path -->
                 {% if i.path contains 'img/gal{{ page.sortid }}' %}
                     <li>
                         <img src="/img/gal{{ page.sortid }}/{{ i.name }}" alt="">
