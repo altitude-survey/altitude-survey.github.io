@@ -12,16 +12,14 @@ plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag
 
-# collections:
-#   - "gal_3.1":
-#       p1 : v1
+collections:
+- gal_3.1
 
 
 
 
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "uni"
+- scope:
+    path: "" # an empty string here means all files in the project
+  values:
+    layout: "uni"
