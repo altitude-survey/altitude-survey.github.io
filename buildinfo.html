@@ -4,7 +4,7 @@ permalink: "/_buildinfo"
 layout: default
 sitemap: false
 ---
-+++
+
 build: {{ site.time }}<br/>
 jekyll: {{ jekyll | jsonify }}<br/>
 
@@ -18,7 +18,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <h3>Documents:</h3>
 <ul>
     {% for d in site.documents %}
-        <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
+        <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.name }}</li>
     {% endfor %}
 </ul>
 
@@ -34,7 +34,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 {{ site.data | jsonify }}   
 
 <h3>Collections:</h3>
-{{ site.collections | jsonify }}
+<!-- {{ site.collections | jsonify }}  -->
 <ul>
     {% for col in site.collections %}
         <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
@@ -43,6 +43,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
                     <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
                 {% endfor %}
             </ul>
+            <hr/>
             <ul>
                 {% for f in col.files %}
                     <li><a href="{{ f.path}}">{{ f.path}}</a></li>
