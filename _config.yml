@@ -13,7 +13,7 @@ plugins:
   # - jekyll-seo-tag
 
 collections:
-  - gal_3.1:
+  - "gal_3.1":
       p1 : v1
 
 
