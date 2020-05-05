@@ -43,10 +43,10 @@ jekyll: {{ jekyll | jsonify }}<br/>
                     <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
                 {% endfor %}
             </ul>
-            <hr/>
+            __
             <ul>
                 {% for f in col.files %}
-                    <li><a href="{{ f.url}}">{{ f.url}}</a></li>
+                    <li><a href="{{ f.path}}">{{ f.path}}</a>{{ f.name }}</li>
                 {% endfor %}
             </ul>
         </li>
