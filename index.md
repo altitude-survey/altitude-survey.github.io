@@ -18,7 +18,6 @@ submenu: false
 ![10](//Create 1.0.jpg/150x100)
 ![10](//Create 1.0.jpg)
 
-https://github.com/altitude-survey/altitude-survey.github.io/blob/master/img/top_logo.jpg
 Картинка без `alt` текста
 
 ![1.4](//img/toplogo/1.4.jpg/150x100)   
@@ -28,6 +27,10 @@ https://github.com/altitude-survey/altitude-survey.github.io/blob/master/img/top
 ![1.1](//img/0/0.1.4.jpg/150x100)
 Картинка с альтом и тайтлом:
 
+![1.1](//img 0 0.1.4.jpg/150x100)
+
+
+![1.1](//img00.1.4.jpg/150x100)
 
 
 ![0](//img/toplogo/1.4.jpg/150x100 "Можно задать title")
