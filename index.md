@@ -25,7 +25,7 @@ submenu: false
 ![1.1](//0.jpg/150x100)
 Картинка с альтом и тайтлом:
 
-![Alt text](//1.5./150x100 "Можно задать title")
+![Alt text](//img/toplogo/1.4.jpg/150x100 "Можно задать title")
 
 [jpg]: //0/250x100
 [0]: //placehold.it/250x100
