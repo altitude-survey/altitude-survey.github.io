@@ -15,8 +15,8 @@ submenu: false
 *Полученное заключение является доказательством, свидетельствующим о наличии / отсутствии интересующих фактических данных в разрешении того или иного вопроса, и становится основанием для принятия вами решения.
 
 #### Где проводится обследования.
-![10](//img/top_logo.jpg/150x100)
-![10](//img/top_logo.jpg)
+![10](//Create 1.0.jpg/150x100)
+![10](//Create 1.0.jpg)
 
 https://github.com/altitude-survey/altitude-survey.github.io/blob/master/img/top_logo.jpg
 Картинка без `alt` текста
@@ -31,7 +31,7 @@ https://github.com/altitude-survey/altitude-survey.github.io/blob/master/img/top
 ![2](//toplogo/0/150x100 "Можно задать title")
 ![3](///0/150x100 "Можно задать title")
 ![4](//0/150x100 "Можно задать title")
-![5](//0.jpg/150x100 "Можно задать title")
+![5](//Create 1.0.jpg/150x100 "Можно задать title")
 
 
 
