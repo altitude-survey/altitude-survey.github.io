@@ -16,6 +16,7 @@ submenu: false
 
 #### Где проводится обследования.
 ![10](//img/top_logo.jpg/150x100)
+![10](//img/top_logo.jpg)
 
 https://github.com/altitude-survey/altitude-survey.github.io/blob/master/img/top_logo.jpg
 Картинка без `alt` текста
