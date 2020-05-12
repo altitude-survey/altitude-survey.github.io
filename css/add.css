@@ -2,3 +2,9 @@ p>code {
    visibility: hidden; 
    margin-left: 1.5em;
 }
+
+p::after { 
+   content: "";
+   display: block; 
+   clear: both;
+ }
