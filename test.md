@@ -21,13 +21,14 @@ Donec placerat tristique nunc ut laoreet. Maecenas id nunc ut ante fringilla fin
 quis nulla. Morbi et nibh id ante lobortis fermentum.
 
 *Курсив*
+
 **Жирный**
 
 __Выделение__
 
-___ Выделение ___
+___Выделение___
 
-` ` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet blandit gravida blandit dolor. Proin iaculis lorem ante, sodales feugiat orci varius in. Donec eu est augue. Nulla at convallis purus.
+` ` Абзац с отступом. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet blandit gravida blandit dolor. Proin iaculis lorem ante, sodales feugiat orci varius in. Donec eu est augue. Nulla at convallis purus.
 
 ---
 
