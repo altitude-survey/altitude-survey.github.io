@@ -32,6 +32,8 @@ ___Выделение___
 
 ---
 
+Сыылка на PDF врутри абаца. {% include el-pdf.html text="12-03-2001" name="СНиП 12-03-2001.pdf" %} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet blandit gravida blandit dolor. Proin iaculis lorem ante, sodales feugiat orci varius in. Donec eu est augue. Nulla at convallis purus.
+
 - Список
 - Список
 - Список
