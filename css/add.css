@@ -3,10 +3,11 @@ p>code {
    margin-left: 1.5em;
 }
 
-
  h6, .clear-both{
    visibility: hidden;
    width: 0;
    height: 0;
    clear: both;
+   margin: 0;
+   padding: 0;
  }
