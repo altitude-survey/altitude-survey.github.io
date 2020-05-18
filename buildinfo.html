@@ -51,12 +51,13 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <ul>
     {% for col in site.collections %}
         <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
+            DOCS:
             <ul>
                 {% for d in col.docs %}
                     <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
                 {% endfor %}
             </ul>
-            __
+            FILES:
             <ul>
                 {% for f in col.files %}
                     <li><a href="{{ f.path}}">{{ f.path}}</a>{{ f.name }}</li>

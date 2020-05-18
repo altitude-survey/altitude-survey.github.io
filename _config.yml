@@ -15,6 +15,7 @@ collections:
   portfolio:
     output: true
     layout: "portfolio"
+    permalink: /portfolio/:title
     
 
 
