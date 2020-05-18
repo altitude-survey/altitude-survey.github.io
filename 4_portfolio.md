@@ -14,9 +14,9 @@ submenu: false
         {% for work in site.portfolio %}
             <div>
                 <a href="{{ work.url }}">
-                    <div  class="uk-card">
+                    <div  class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="{{ work.cover }}" alt="">
+                            <img src="{{ work.cover }}" style="width:200px;">
                         </div>
                         <div class="uk-card-body">               
                             <h3> {{ work.name}} </h3>
