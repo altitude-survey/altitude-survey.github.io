@@ -10,7 +10,7 @@ submenu: false
 
 {::nomarkdown}
 
-    <div class="uk-flex uk-flex-wrap">
+    <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
         {% for work in site.portfolio %}
             <div>
                 <a href="{{ work.url }}">
