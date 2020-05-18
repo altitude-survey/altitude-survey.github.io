@@ -11,9 +11,9 @@ submenu: false
 {::nomarkdown}
     <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-height-match="row: false" uk-grid>
         {% for work in site.portfolio %}
-            <div>
-                <a href="{{ work.url }}">
-                    <div  class="uk-card uk-card-default uk-card-hover">
+            
+                <a href="{{ work.url }}" class="uk-card uk-card-default uk-card-hover">
+                   
                         <div class="uk-card-media-top">
                             <img src="{{ work.cover }}">
                         </div>
@@ -21,9 +21,9 @@ submenu: false
                             <h3> {{ work.caption }} </h3>
                             <p> {{ work.description }} </p>
                         </div>                        
-                    </div>
+                    
                 </a>
-            </div>
+            
         {% endfor %}            
     </div>        
 {:/}
