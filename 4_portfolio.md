@@ -9,7 +9,7 @@ submenu: false
 {% include el-slider.html  nimg = "3" %}
 
 {::nomarkdown}
-    <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+    <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-height-match="row: false" uk-grid>
         {% for work in site.portfolio %}
             <div>
                 <a href="{{ work.url }}">
