@@ -9,7 +9,6 @@ submenu: false
 {% include el-slider.html  nimg = "3" %}
 
 {::nomarkdown}
-
     <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
         {% for work in site.portfolio %}
             <div>
@@ -26,6 +25,5 @@ submenu: false
                 </a>
             </div>
         {% endfor %}            
-    </div>
-        
+    </div>        
 {:/}
