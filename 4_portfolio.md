@@ -13,7 +13,7 @@ submenu: false
     <div class="uk-flex uk-flex-wrap>
         {% for work in site.portfolio %}
             <div>
-                <a href="{{ work.url }}">
+                <!-- <a href="{{ work.url }}"> -->
                     <div  class="uk-card">
                         <div class="uk-card-media-top">
                             <img src="{{ work.cover }}" alt="">
@@ -23,7 +23,7 @@ submenu: false
                             <p> {{ work.description}} </p>
                         </div>                        
                     </div>
-                </a>
+                <!-- </a> -->
             </div>
         {% endfor %}            
     </div>
