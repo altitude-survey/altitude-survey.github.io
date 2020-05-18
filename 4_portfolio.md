@@ -16,11 +16,11 @@ submenu: false
                 <a href="{{ work.url }}">
                     <div  class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="{{ work.cover }}" style="width:200px;">
+                            <img src="{{ work.cover }}">
                         </div>
                         <div class="uk-card-body">               
-                            <h3> {{ work.name}} </h3>
-                            <p> {{ work.description}} </p>
+                            <h3> {{ work.caption }} </h3>
+                            <p> {{ work.description }} </p>
                         </div>                        
                     </div>
                 </a>
