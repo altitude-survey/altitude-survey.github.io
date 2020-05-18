@@ -13,7 +13,7 @@ submenu: false
         {% for work in site.portfolio %}
             <div>
                 <a href="{{ work.url }}">
-                    <div  class="uk-card uk-card-default">
+                    <div  class="uk-card uk-card-default uk-card-hover">
                         <div class="uk-card-media-top">
                             <img src="{{ work.cover }}">
                         </div>
