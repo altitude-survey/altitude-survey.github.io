@@ -30,7 +30,7 @@ submenu: false
 
 ###### отменяет действие align-left и align-right
 
-![](/img/0/0.1.2.jpg){:class="uk-align-left uk-width-1-2"}
+![](/img/0/0.2.jpg){:class="uk-align-left uk-width-1-2"}
 **Объекты гражданского строительства:**   
 - Высотные здания и сооружения  
 - жилые дома  
@@ -40,7 +40,7 @@ submenu: false
 ###### отменяет действие align-left и align-right
 
 
-![](/img/0/0.1.3.jpg){:class="uk-align-left uk-width-1-2"}
+![](/img/0/0.3.jpg){:class="uk-align-left uk-width-1-2"}
 **Объекты транспортного строительства:**  
 - мосты  
 - тоннели  
@@ -48,7 +48,7 @@ submenu: false
 
 ###### отменяет действие align-left и align-right
 
-![](/img/0/0.1.4.jpg){:class="uk-align-left uk-width-1-2"}
+![](/img/0/0.4.jpg){:class="uk-align-left uk-width-1-2"}
 **Объекты гидротехнического назначения:**   
 - плотины  
 - дамбы  
