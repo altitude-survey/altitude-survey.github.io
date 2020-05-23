@@ -16,7 +16,7 @@ submenu: false
 
 ### **Где проводится обследования:**
 
-![](/img/0/0.1.1.jpg){:class="uk-align-left uk-width-1-3"}  
+![](/img/0/0.1.1.1.jpg){:class="uk-align-left uk-width-1-3"}  
 **Объекты промышленного строительства:**     
 - заводы  
 - фабрики  
