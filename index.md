@@ -30,7 +30,7 @@ submenu: false
 
 ###### отменяет действие align-left и align-right
 
-![](/img/0/0.1.2.00.jpg){:class="uk-align-left uk-width-1-3"}
+![](/img/0/0.1.2.0.jpg){:class="uk-align-left uk-width-1-2"}
 **Объекты гражданского строительства:**   
 - Высотные здания и сооружения  
 - жилые дома  
