@@ -40,8 +40,8 @@ submenu: false
 ###### отменяет действие align-left и align-right
 
 =
-![](/img/0/0.1.3.jpg){:class="uk-align-left uk-width-1-3"}
-![](/img/0/0.1.4.jpg){:class="uk-align-left uk-width-1-3"}
+![](/img/0/0.1.3.jpg){:class="uk-align-left uk-width-1-2"}
+![](/img/0/0.1.4.jpg){:class="uk-align-left uk-width-1-2"}
 
 ###### отменяет действие align-left и align-right
 **Объекты транспортного строительства:**  
@@ -49,7 +49,7 @@ submenu: false
 - тоннели  
 - аэродромы
 
-###### отменяет действие align-left и align-right
+
 **Объекты гидротехнического назначения:**   
 - плотины  
 - дамбы  
