@@ -29,11 +29,21 @@ jekyll: {{ jekyll | jsonify }}<br/>
 </table>
 
 <h3>Documents:</h3>
-<ul>
+<table>
     {% for d in site.documents %}
-        <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.name }}</li>
+    <tr>
+        {% for p in d %}
+            <td>
+                {% if d == "url" %}
+                    <a href="{{ d.url}}">{{ d.url}}</a>
+                {% else %}
+                    {{ d[p] }}
+                {% endif %}
+            </td>
+        {% endfor %}
+    </tr>
     {% endfor %}
-</ul>
+</table>
 
 
 <h3>Static files:</h3>
@@ -51,7 +61,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <ul>
     {% for col in site.collections %}
         <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
-            DOCS:
+            <br/>DOCS:
             <ul>
                 {% for d in col.docs %}
                     <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
