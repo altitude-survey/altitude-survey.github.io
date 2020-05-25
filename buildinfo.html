@@ -31,20 +31,28 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <h3>Documents:</h3>
 <table>
     {% for d in site.documents %}
-    <tr>
-        {% for p in d %}
-            {% if p == "content" %}{% continue %}{% endif %}
-            <td>
-                {% if p == "url" %}
-                    <a href="{{ d.url}}">{{ d.url}}</a>
-                {% elsif p == "content" %}
-                {% else %}
-                    <!-- {{ p }} -->
-                    {{ d[p] }}
-                {% endif %}
-            </td>
-        {% endfor %}
-    </tr>
+        {% if forloop.first == true %}
+            <tr>
+                {% for p in d %}
+                    {% if p == "content" or p == "output" or p=="next" or p=="previous" %}{% continue %}{% endif %}
+                    <th>{{ p }}</th>
+                {% endfor %}
+            </tr>
+        {% endif %}
+        <tr>
+            {% for p in d %}
+                {% if p == "content" or p == "output" or p=="next" or p=="previous" %}{% continue %}{% endif %}
+                <td>
+                    {% if p == "url" %}
+                        <a href="{{ d.url}}">{{ d.url}}</a>
+                    {% elsif p == "content" %}
+                    {% else %}
+                        <!-- {{ p }} -->
+                        {{ d[p] }}
+                    {% endif %}
+                </td>
+            {% endfor %}
+        </tr>
     {% endfor %}
 </table>
 
