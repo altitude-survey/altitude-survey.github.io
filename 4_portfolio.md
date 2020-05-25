@@ -14,11 +14,13 @@ submenu: false
             <div>
                 <a href="{{ work.url }}" class="uk-card uk-card-default uk-card-hover uk-card-small">
                     
-                        <div class="uk-card-media-top">
+                        <div class="uk-card-media-top uk-inline">
                             <img src="{{ work.cover }}">
+                            <div class="uk-overlay uk-light uk-overlay-primary uk-position-bottom-center">
+                                <h3> {{ work.caption }} </h3>
+                            </div>
                         </div>
-                        <div class="uk-card-body">               
-                            <h3> {{ work.caption }} </h3>
+                        <div class="uk-card-body">    
                             <p> {{ work.description }} </p>
                         </div>                        
                     
