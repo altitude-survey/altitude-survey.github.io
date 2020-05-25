@@ -9,11 +9,11 @@ submenu: false
 {% include el-slider.html  nimg = "3" %}
 
 {::nomarkdown}
-    <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
+    <div class="uk-grid-match uk-grid-small uk-child-width-1-3 uk-padding" uk-grid>
         {% for work in site.portfolio %}
             <div>
-                <a href="{{ work.url }}" class="uk-card uk-card-default uk-card-hover uk-margin-small-left">
-                   
+                <a href="{{ work.url }}" class="uk-card uk-card-default uk-card-hover uk-card-small">
+                    
                         <div class="uk-card-media-top">
                             <img src="{{ work.cover }}">
                         </div>
