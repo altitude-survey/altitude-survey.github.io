@@ -45,9 +45,10 @@ jekyll: {{ jekyll | jsonify }}<br/>
                 <td>
                     {% if p == "url" %}
                         <a href="{{ d.url}}">{{ d.url}}</a>
-                    {% elsif p == "excerpt" %}
+                    {% elsif p == "excerpt" or p == "caption" or p == "description" %}
                         <details>
                             <summary></summary>
+                            {{ d[p] }}
                         </details>
                     {% else %}
                         <!-- {{ p }} -->
