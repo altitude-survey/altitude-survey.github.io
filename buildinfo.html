@@ -33,10 +33,13 @@ jekyll: {{ jekyll | jsonify }}<br/>
     {% for d in site.documents %}
     <tr>
         {% for p in d %}
+            {% if p == "content" %}{% continue %}{% endif %}
             <td>
-                {% if d == "url" %}
+                {% if p == "url" %}
                     <a href="{{ d.url}}">{{ d.url}}</a>
+                {% elsif p == "content" %}
                 {% else %}
+                    <!-- {{ p }} -->
                     {{ d[p] }}
                 {% endif %}
             </td>
