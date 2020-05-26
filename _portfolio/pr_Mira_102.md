@@ -1,5 +1,5 @@
 ---
-cover: /img/portfolio/pr_Mira_102.jpeg
+cover: /img/portfolio/pr_Mira_102.jpg
 caption: комплекс работ по замене фасадных панелей HPL
 description: причина замены деформация панелей
 title: Замена панелей Парк Мира 
