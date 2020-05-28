@@ -1,5 +1,5 @@
 
-{% assign sort_pages = site.pages  | where_exp: "item", "item.sortid == '1.0' or item.sortid == '2.0'" %}
+{% assign sort_pages = site.pages  | where_exp: "item", "item.sortid == 1.0 or item.sortid == 2.0" %}
 {% for p in sort_pages %}
     <!-- {{ p.title }} -->
 {% endfor %}  
