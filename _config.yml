@@ -24,9 +24,4 @@ defaults:
     path: "" # an empty string here means all files in the project
   values:
     layout: "uni"
-- scope:
-    path: ""
-    type: "portfolio"
-  values:
-    layout: "portfolio"
-    permalink: /portfolio/:title
+
