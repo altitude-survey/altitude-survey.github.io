@@ -20,13 +20,15 @@
                     {%- if p.main -%}                        
                         <li class="uk-active">                            
                             <a href="{{ p.url }}" class="uk-button-text">
-                                {%- for line in menu_title -%}
-                                    {%- if forloop.first == true -%}
-                                        {{ line }}
-                                    {%- else -%}
-                                        <div class="uk-navbar-subtitle">{{ line }}</div>
-                                    {%- endif -%}
-                                {%- endfor -%}                                
+                                <div>                                
+                                    {%- for line in menu_title -%}
+                                        {%- if forloop.first == true -%}
+                                            {{ line }}
+                                        {%- else -%}
+                                            <div class="uk-navbar-subtitle">{{ line }}</div>
+                                        {%- endif -%}
+                                    {%- endfor -%}
+                                </div>                                
                                 {%- if p.submenu -%}
                                     <span uk-icon="chevron-down"></span>
                                 {%- endif -%}
