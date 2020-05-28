@@ -3,7 +3,6 @@ title: Главная
 cat: 0
 main: true
 sortid: 0
-caption:ВЫСОТА
 submenu: false
 ---
 
