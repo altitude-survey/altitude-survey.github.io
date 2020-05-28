@@ -9,16 +9,24 @@
             <ul class="uk-navbar-nav">
                 {% assign sort_pages = site.pages | sort: "sortid" %}
                 {%- for p in sort_pages -%}
-                    {% capture menu_title %}
+                    {% capture upnd_title %}
                         {% if p.cat == "6.0" %}
                             {{ p.title }} {{ site.data.var.phones[0] }}
                         {% else %}
                             {{ p.title }}
                         {% endif %}
                     {% endcapture %}
-                    {% if p.main %}                        
+                    {% assign menu_title = upnd_title | split: " " %}
+                    {%- if p.main -%}                        
                         <li class="uk-active">                            
-                            <a href="{{ p.url }}" class="uk-button-text">{{ p.title }}
+                            <a href="{{ p.url }}" class="uk-button-text">
+                                {%- for line in menu_title -%}
+                                    {%- if forloop.first == true -%}
+                                        {{ line }}
+                                    {%- else -%}
+                                        <div class="uk-navbar-subtitle">{{ line }}</div>
+                                    {%- endif -%}
+                                {%- endfor -%}                                
                                 {%- if p.submenu -%}
                                     <span uk-icon="chevron-down"></span>
                                 {%- endif -%}
@@ -37,7 +45,7 @@
                                 </div>                                    
                             {% endif %}
                         </li> 
-                    {% endif %}
+                    {%- endif -%}
                 {%- endfor -%}
             </ul>
         </div>
