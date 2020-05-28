@@ -11,6 +11,8 @@ submenu: false
 {::nomarkdown}
     <div class="uk-grid-match uk-grid-small uk-child-width-1-3 uk-padding" uk-grid>
         {% for work in site.portfolio %}
+            {% include el-card.html url=work.url img=work.cover header=work.caption text=work.description %}
+            {% comment %} 
             <div>
                 <a href="{{ work.url }}" class="uk-card uk-card-default uk-card-hover uk-card-small">
                     
@@ -26,6 +28,7 @@ submenu: false
                     
                 </a>
             </div>
+            {% endcomment %}
         {% endfor %}            
     </div>        
 {:/}
