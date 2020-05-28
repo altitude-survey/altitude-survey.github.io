@@ -18,7 +18,9 @@
             <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
         {% endif %}
         <article class="uk-article">
-                {% if true %}
+                {% if page.cat == 0 %}
+                    <h1 class="uk-article-title">{{ site.title }}</h1>
+                {% else %}
                     <h1 class="uk-article-title">{{ page.title }}</h1>
                 {% endif %}
                 {{ content }}
