@@ -1,6 +1,6 @@
-{% assign sort_pages = site.pages | sort: "sortid" | where: "main" %}
+{% assign sort_pages = site.pages | where: "main" %}
 <div class="uk-grid-match uk-grid-small uk-child-width-1-3 uk-padding" uk-grid>
         {% for p in sort_pages %}
-            {% include el-card.html url=p.url img=p.cover header=work.title text="" %} 
+            {% include el-card.html url=p.url img="/img/toplogo/{{ page.sortid }}.jpg" header=work.title text="" %} 
         {% endfor %}  
 </div>
