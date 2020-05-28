@@ -17,7 +17,7 @@ sitemap: false
 
 
 Текст по центру страницы
-{:class=".uk-text-center"}
+{: .uk-text-center}
 
 {% include el-slider.html  %} - добавляет в галерею все фотографии из папки  /img/galX.X, где X.X - sortid: сойство страницы
 
