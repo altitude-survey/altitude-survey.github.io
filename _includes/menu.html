@@ -10,7 +10,7 @@
                 {% assign sort_pages = site.pages | sort: "sortid" %}
                 {%- for p in sort_pages -%}
                     {% capture upnd_title %}
-                        {% if p.cat == "6.0" %}
+                        {% if p.cat == 6.0 %}
                             {{ p.title }} {{ site.data.var.phones[0] }}
                         {% else %}
                             {{ p.title }}
