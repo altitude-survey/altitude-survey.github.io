@@ -17,7 +17,7 @@ submenu: false
                         <div class="uk-card-media-top uk-inline">
                             <img src="{{ work.cover }}">
                             <div class="uk-overlay uk-light uk-overlay-primary uk-position-bottom-center">
-                                <h3> {{ work.caption }} </h3>
+                                <h4> {{ work.caption }} </h4>
                             </div>
                         </div>
                         <div class="uk-card-body">    

@@ -19,7 +19,7 @@ sitemap: false
 Текст по центру страницы
 {: .uk-text-center}
 
-{% include el-slider.html  %} - добавляет в галерею все фотографии из папки  /img/galX.X, где X.X - sortid: сойство страницы
+{% include el-slider.html  %}  добавляет в галерею все фотографии из папки  /img/galX.X, где X.X - sortid свойство страницы
 
 ![](/img/0/0.1.1.jpg){:class="uk-align-left uk-width-1-2"}  Картинка будет слева на половину ширины.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet 
