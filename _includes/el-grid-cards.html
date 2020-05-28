@@ -4,7 +4,7 @@
         {% for p in sort_pages %}
             {% if p.sortid == 1.0 or p.sortid == 2.0 or p.sortid == 3.0 %} 
             <!-- {{ p.title }} -->
-            {% include el-card.html url=p.url img="/img/toplogo/{{ page.sortid }}.jpg" header=work.title text="" %} 
+            {% include el-card.html url=p.url img="/img/toplogo/{{ p.sortid }}.jpg" header=p.title text="" %} 
             {% endif %}
         {% endfor %}
     </div>  
