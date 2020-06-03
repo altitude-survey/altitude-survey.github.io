@@ -7,7 +7,9 @@
                     {% continue %}
                 {% endif %} 
             {%- elsif page.main and page.submenu -%}
-
+                {% if p.cat != page.cat or p.url == page.url %}
+                    {% continue %}
+                {% endif %} 
             {%- endif -%}
             
             <!-- {{ p.title }} -->
