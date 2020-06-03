@@ -6,7 +6,8 @@
                 {% if p.sortid != 1.0 and p.sortid != 2.0 and p.sortid != 3.0 %}
                     {% continue %}
                 {% endif %} 
-            {%- elsif -%}
+            {%- elsif page.main and page.submenu -%}
+
             {%- endif -%}
             
             <!-- {{ p.title }} -->
