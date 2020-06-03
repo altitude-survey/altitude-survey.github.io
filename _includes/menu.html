@@ -1,5 +1,5 @@
-<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
+<div class="uk-box-shadow-xlarge" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
                 <div class="uk-navbar-item">
                     <img src="/img/eagle.png" width="100">
@@ -7,16 +7,16 @@
         </div>
         <div class="uk-navbar-center nav-overlay">
             <ul class="uk-navbar-nav">
-                {% assign sort_pages = site.pages | sort: "sortid" %}
+                {%- assign sort_pages = site.pages | sort: "sortid" -%}
                 {%- for p in sort_pages -%}
-                    {% capture upnd_title %}
+                    {%- capture upnd_title -%}
                         {% if p.cat == 6.0 %}
                             {{ p.title }} {{ site.data.var.phones[0] }}
                         {% else %}
                             {{ p.title }}
                         {% endif %}
-                    {% endcapture %}
-                    {% assign menu_title = upnd_title | split: " " %}
+                    {%- endcapture -%}
+                    {%- assign menu_title = upnd_title | split: " " -%}
                     {%- if p.main -%}                        
                         <li class="uk-active">                            
                             <a href="{{ p.url }}" class="uk-button-text">
@@ -66,8 +66,28 @@
         </div>
 
     </nav>
+    {%- if page.submenu -%}
+        <div class="uk-alert-primary">
+            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                {%- for p in sort_pages -%}
+                    {% if p.cat == page.cat and p.main != true %}
+                        {% if p.url == page.url %}
+                            <li class="uk-active">                        
+                                <a>{{ p.title }}</a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="{{ p.url}}">{{ p.title }}</a> 
+                            </li>    
+                            {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+            </ul>
+        </div>
+    {% endif %}
 </div>
-{% include uk-breadcrumb.html %}
+{% comment %}    
+
     {%- if page.submenu -%}
         <nav id="sub">
             <ul class="uk-subnav uk-subnav-divider uk-subnav-pill" uk-margin>
@@ -87,3 +107,6 @@
             </ul>
         </nav>
     {% endif %}
+
+
+{% endcomment %}
