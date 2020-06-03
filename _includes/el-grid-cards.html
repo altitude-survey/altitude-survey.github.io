@@ -27,13 +27,10 @@
                 
                 <!-- {{ p.title }} -->
                 {% capture imgurl %}/img/toplogo/{{ p.sortid }}.jpg{% endcapture %}
-                {% include el-card.html url=p.url img=imgurl header=p.title text="" %} 
+                {% include el-card.html url=p.url img=imgurl header=p.title text="" %}          
 
-            {% if forloop.last %}
-                </div>  
-            {% endif %}
-
-        {% endfor %}    
+        {% endfor %}
+    </div>      
 {% comment %}    
 
 {% endcomment %}
