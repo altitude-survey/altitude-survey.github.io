@@ -18,8 +18,13 @@
                     {%- endcapture -%}
                     {%- assign menu_title = upnd_title | split: " " -%}
                     {%- if p.main -%}
-                        
-                        <li {%- if p.url == page.url -%} class="uk-active" {%- endif -%} >                            
+                    
+                        {% if p.url == page.url %}
+                            <li class="uk-active">  
+                        {%- else -%}
+                            <li>  
+                        {%- endif -%}
+                                                  
                             <a href="{{ p.url }}" class="uk-button-text">
                                 <div class="uk-text-center">                                
                                     {%- for line in menu_title -%}
