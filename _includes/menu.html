@@ -1,4 +1,4 @@
-<div class="uk-box-shadow-xlarge" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+<div class="" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
                 <div class="uk-navbar-item">
@@ -68,7 +68,7 @@
     </nav>
     {%- if page.submenu -%}
         <div class="uk-alert-primary">
-            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+            <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-margin>
                 {%- for p in sort_pages -%}
                     {% if p.cat == page.cat and p.main != true %}
                         {% if p.url == page.url %}
