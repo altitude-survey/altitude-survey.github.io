@@ -17,8 +17,12 @@
                         {% endif %}
                     {%- endcapture -%}
                     {%- assign menu_title = upnd_title | split: " " -%}
-                    {%- if p.main -%}                        
-                        <li class="uk-active">                            
+                    {%- if p.main -%}
+                        {%- if p.cat == page.cat -%}
+                        {%- endif -%}
+                        {% if p.url == page.url %}
+                        {%- endif -%}       
+                        <li {%- if p.url == page.url -%} class="uk-active" {%- endif -%} >                            
                             <a href="{{ p.url }}" class="uk-button-text">
                                 <div class="uk-text-center">                                
                                     {%- for line in menu_title -%}
@@ -29,11 +33,14 @@
                                         {%- endif -%}
                                     {%- endfor -%}
                                 </div>                                
-                                {%- if p.submenu -%}
+                                {%- if p.submenu and p.cat == page.cat -%}
                                     <span uk-icon="chevron-down"></span>
+                                {%- elsif p.submenu -%}
+                                    <span uk-icon="chevron-right"></span>
                                 {%- endif -%}
+
                             </a>
-                            {% if p.submenu %}
+                            {% if p.submenu and p.cat != page.cat %}
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         {%- for s in sort_pages -%}
