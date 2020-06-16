@@ -9,7 +9,7 @@ submenu: false
 {% include el-slider.html  nimg = "3" %}
 
 {::nomarkdown}
-    <div class="uk-grid-match uk-grid-small uk-child-width-1-3 uk-padding" uk-grid>
+    <div class="uk-grid-match uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@m uk-padding" uk-grid>
         {% for work in site.portfolio %}
             {% include el-card.html url=work.url img=work.cover header=work.caption text=work.description %}            
         {% endfor %}            

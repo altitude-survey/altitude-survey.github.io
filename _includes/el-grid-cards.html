@@ -5,11 +5,11 @@
 
             {% if forloop.first %}
                 {% if page.cat == 1 %}
-                    {% assign wideclass = 'uk-child-width-1-5' %}
+                    {% assign wideclass = 'uk-child-width-1-5@l' %}
                 {%elsif page.cat == 2 %}
-                    {% assign wideclass = 'uk-child-width-1-2' %}
+                    {% assign wideclass = 'uk-child-width-1-2@m' %}
                 {% else %}
-                    {% assign wideclass = 'uk-child-width-1-3' %}    
+                    {% assign wideclass = 'uk-child-width-1-3@m' %}    
                 {% endif %}
 
                 <div class="uk-grid-match uk-grid-small uk-child-width-1-1@s {{ wideclass }}  uk-padding" uk-grid>
