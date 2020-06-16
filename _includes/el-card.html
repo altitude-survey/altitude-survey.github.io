@@ -6,8 +6,10 @@
                 <h4> {{ include.header }} </h4>
             </div>
         </div>
-        <div class="uk-card-body">    
-            <p> {{ include.text }} </p>
-        </div>        
+        {% if include.text %}
+            <div class="uk-card-body">    
+                <p> {{ include.text }} </p>
+            </div>
+        {% enif %}        
     </a>
 </div>
