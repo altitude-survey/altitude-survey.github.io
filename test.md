@@ -4,7 +4,7 @@ permalink: "/_test"
 sitemap: false
 ---
 
-{% include el-video.html  url="https://www.youtube.com/watch?v=c2pz2mlSfXA" %}
+{% include el-youtube.html  id="c2pz2mlSfXA" %}
 
 
 # h1
