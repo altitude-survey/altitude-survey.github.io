@@ -4,8 +4,8 @@ permalink: "/_test"
 sitemap: false
 ---
 
-{% include el-video.html  url="https://cloud.mail.ru/public/4DN2/4as6kqbdv" %}
-{% include el-video.html  url="https://player-smotri.mail.ru/?viewMode=external&brandsafety=1&manifestUrl=https://cloclo21.cloud.mail.ru/videowl/0p/NEROMi80YXM2a3FiZHY=.m3u8?double_encode=1&pictureUrl=https://thumb.cloud.mail.ru/weblink/thumb/vxw0/4DN2/4as6kqbdv/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BC%20%D0%AD%D0%98%D0%94%20%D0%B8%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%9F%D0%92%D0%A5%20%D0%BC%D0%B5%D0%BC%D0%B1%D1%80%D0%B0%D0%BD%D1%8B.mov?x-email=undefined&noSound=1" %}
+{% include el-video.html  url="https://www.youtube.com/watch?v=c2pz2mlSfXA" %}
+
 
 # h1
 Абзац
