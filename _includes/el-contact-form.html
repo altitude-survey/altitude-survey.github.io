@@ -1,0 +1,41 @@
+<div class="uk-margin uk-flex-center" uk-grid>
+    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-contact-form">Связаться с нами</button>
+  </div>
+  <div id="modal-contact-form" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <form class="uk-form-stacked">
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-name">Ваше имя</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="form-name" type="text" placeholder="Ваше имя">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-phone">Телефон</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="form-phone" type="tel" placeholder="Телефон" required>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-email">Почта</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="form-email" type="email" placeholder="Почта">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-coment">Комментарии</label>
+          <div class="uk-form-controls">
+            <textarea class="uk-textarea" id="form-coment" type="text" placeholder="Комментарии"></textarea>
+          </div>
+        </div>
+  
+        <div class="uk-margin uk-flex-center" uk-grid>
+          <button class="uk-button uk-button-default uk-modal-close">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>

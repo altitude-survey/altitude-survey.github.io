@@ -6,6 +6,8 @@ sitemap: false
 
 {% include el-youtube.html  id="c2pz2mlSfXA" %}
 
+{% include el-contact-form.html %}
+
 
 # h1
 Абзац
