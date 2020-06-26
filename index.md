@@ -32,8 +32,9 @@ layout: category
 - резервуары  
 - дымовые трубы  
 - антенно-мачтовые и сооружения.  
-{% include el-contact-form.html %}
+
 ###### отменяет действие align-left и align-right
+{% include el-contact-form.html %}
 
 ![](/img/0/0.2.jpg){:class="uk-align-left uk-width-1-3"}
 **Объекты гражданского строительства:**   
@@ -42,10 +43,9 @@ layout: category
 - общественные здания  
 - торговые комплексы  
 - склады  
-***ЗАКАЗАТЬ***
-{% include el-contact-form.html %}
-###### отменяет действие align-left и align-right
 
+###### отменяет действие align-left и align-right
+{% include el-contact-form.html %}
 
 ![](/img/0/0.3.jpg){:class="uk-align-left uk-width-1-3"}
 **Объекты транспортного строительства:**  
@@ -58,7 +58,7 @@ layout: category
 - дамбы  
 - берегоукрепительные сооружения и устройства  
 - водонапорные башни   
-***ЗАКАЗАТЬ***
+
 ###### отменяет действие align-left и align-right
 {% include el-contact-form.html %}
 
