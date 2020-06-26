@@ -60,6 +60,7 @@ layout: category
 - водонапорные башни   
 ***ЗАКАЗАТЬ***
 ###### отменяет действие align-left и align-right
+{% include el-contact-form.html %}
 
 ### **Обследования подразделяются:** 
 
