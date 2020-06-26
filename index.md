@@ -43,6 +43,7 @@ layout: category
 - торговые комплексы  
 - склады  
 ***ЗАКАЗАТЬ***
+***{% include el-contact-form.html %}***
 ###### отменяет действие align-left и align-right
 
 
