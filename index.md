@@ -32,7 +32,7 @@ layout: category
 - резервуары  
 - дымовые трубы  
 - антенно-мачтовые и сооружения.  
-***ЗАКАЗАТЬ***
+{% include el-contact-form.html %}
 ###### отменяет действие align-left и align-right
 
 ![](/img/0/0.2.jpg){:class="uk-align-left uk-width-1-3"}
