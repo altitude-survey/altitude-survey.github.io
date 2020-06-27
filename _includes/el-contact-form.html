@@ -1,10 +1,13 @@
 <div class="uk-margin uk-flex-center" uk-grid>
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-contact-form">Связаться с нами</button>
-  </div>
+  <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-contact-form">
+    {{ include.text | default:'Связаться с нами' }}
+  </button>
+</div>
+
   <div id="modal-contact-form" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
       <button class="uk-modal-close-default" type="button" uk-close></button>  
-      <form class="uk-form-stacked">
+      <form class="uk-form-stacked" action="https://app.form2chat.io/f/95bac658" method="POST" accept-charset="UTF-8" id="contact-form">
   
         <div class="uk-margin">
           <label class="uk-form-label" for="form-name">Ваше имя</label>
@@ -35,8 +38,43 @@
         </div>
   
         <div class="uk-margin uk-flex-center" uk-grid>
-          <button class="uk-button uk-button-default uk-modal-close">Отправить</button>
+          <button type="submit" class="uk-button uk-button-default uk-modal-close">Отправить</button>
         </div>
+        <input type="hidden" name="_gotyou"></input>
       </form>
     </div>
   </div>
+  <script type="text/javascript">
+    var form = document.getElementById("contact-form");
+  
+    form.onsubmit = function(e) {
+      e.preventDefault();
+  
+      var formData = new FormData(form);
+      var xhr = new XMLHttpRequest();
+  
+      xhr.open("POST", form.action, true);
+  
+      xhr.onload = function(e) {
+        var response = JSON.parse(xhr.response);
+  
+        if (xhr.status === 200) {
+          UIkit.notification({
+            message: 'Успешно отправлено!',
+            status: 'success',
+            pos: 'top-right',
+            timeout: 5000
+          });
+        } else {
+          UIkit.notification({
+            message: 'Ошибка!',
+            status: 'danger',
+            pos: 'top-right',
+            timeout: 5000
+          });
+        }
+      };
+  
+      xhr.send(formData);
+    };
+  </script>
