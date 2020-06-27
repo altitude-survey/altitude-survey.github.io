@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/add.css?{{site.time | date: '%s' }}" />
     <script src="/js/uikit.min.js"></script>
     <script src="/js/uikit-icons.min.js"></script>
+    <script src="/js/textFit.min.js"></script>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
 </head>
@@ -35,6 +36,13 @@
         {% endif %}
     </main>
     {{ site.time }}
-    {% include footer.html %}   
+    {% include footer.html %}
+    <script>
+        function doFit(){
+            textFit(document.querySelectorAll('.uk-overlay h4'));
+        }
+        window.onresize = doFit;
+        doFit();
+    </script>   
 </body>
 </html>
