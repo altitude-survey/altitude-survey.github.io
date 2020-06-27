@@ -4,15 +4,17 @@
         {% for p in sort_pages %}
 
             {% if forloop.first %}
-                {% if page.cat == 1 %}
-                    {% assign wideclass = 'uk-child-width-1-3@m' %}
-                {%elsif page.cat == 2 %}
-                    {% assign wideclass = 'uk-child-width-1-3@m' %}
-                {% else %}
-                    {% assign wideclass = 'uk-child-width-1-3@m' %}    
-                {% endif %}
+                {% comment %}
+                    {% if page.cat == 1 %}
+                        {% assign wideclass = 'uk-child-width-1-3@m' %}
+                    {%elsif page.cat == 2 %}
+                        {% assign wideclass = 'uk-child-width-1-3@m' %}
+                    {% else %}
+                        {% assign wideclass = 'uk-child-width-1-3@m' %}    
+                    {% endif %}
+                {% endcomment %}
 
-                <div class="uk-grid-match uk-grid-small uk-child-width-1-1@s {{ wideclass }}  uk-padding uk-flex-around" uk-grid>
+                <div class="uk-grid-match uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@m  uk-padding uk-flex-around" uk-grid>
             {% endif %}
 
                 {%- if page.sortid == 0 -%}
