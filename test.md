@@ -4,9 +4,12 @@ permalink: "/_test"
 sitemap: false
 ---
 
+{% include el-contact-form.html %}
+
 {% include el-youtube.html  id="c2pz2mlSfXA" %}
 
-{% include el-contact-form.html text="Любой свой текст" %}
+{% include el-contact-form.html icon="receiver" text="Заказать обратный звонок" %}
+
 
 
 # h1

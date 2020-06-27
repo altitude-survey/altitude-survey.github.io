@@ -1,6 +1,9 @@
 <div class="uk-margin uk-flex-center" uk-grid>
-  <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-contact-form">
-    {{ include.text | default:'Связаться с нами' }}
+  <button uk-scrollspy="cls:uk-animation-slide-top" class="uk-button uk-button-primary uk-button-large uk-margin-small-right uk-animation-shake" type="button" uk-toggle="target: #modal-contact-form">
+    {%- if include.icon -%}  
+      <span uk-icon="{{ include.icon }}"></span>
+    {%- endif -%} 
+      {{ include.text | default:'Связаться с нами' }}
   </button>
 </div>
 
