@@ -60,6 +60,7 @@
   
       xhr.onload = function(e) {
         var response = JSON.parse(xhr.response);
+        console.log(xhr.status);
   
         if (xhr.status === 200) {
           UIkit.modal(document.getElementById('modal-contact-form')).hide();
