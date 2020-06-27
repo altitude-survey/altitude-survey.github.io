@@ -6,7 +6,7 @@ sitemap: false
 
 {% include el-youtube.html  id="c2pz2mlSfXA" %}
 
-{% include el-contact-form.html %}
+{% include el-contact-form.html text="Любой свой текст" %}
 
 
 # h1
