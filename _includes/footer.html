@@ -1,12 +1,12 @@
 ﻿<!-- footer -->
 <div class="uk-section-default">
     <div class="uk-section uk-light uk-background-cover" style="background-image: url(/img/footer.jpg)">
-        <div class="uk-container uk-flex">
-            <div class="uk-width-1-3">  
+        <div class="uk-grid-divider uk-grid uk-child-width-1-3" uk-grid>
+            <div class="">  
                     {% include include_md.html file_name="about.md" %}                
             </div>
             
-            <div class="uk-width-1-3">
+            <div class="">
                 {% include include_md.html file_name="sitemap.md" %}
                 {% assign sort_pages = site.pages | sort: "sortid" %}
                 <ul>
@@ -29,7 +29,7 @@
                 </ul>
             </div>
             
-            <div class="uk-width-1-3">
+            <div class="">
                 {% include include_md.html file_name="contacts.md" %}
             </div>
         </div>

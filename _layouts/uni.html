@@ -26,13 +26,11 @@
                 {% endif %}
                 {{ content }}
         </article>
-        {% if page.cat %}
-            <hr class="uk-margin-medium"/>            
-            <div class="uk-animation-toggle" tabindex="0">
-                <div class="uk-height-small uk-text-middle uk-card uk-background-primary uk-align-center uk-box-shadow-medium uk-animation-shake uk-text-center">
-                        <span uk-icon="warning"></span> Для получения достоверной информации, необходимо профессионально обследовать ваш объект.<br>   Свяжитесь с нами!
-                </div>
+        {% if page.cat %}     
+            <div class="uk-text-primary uk-text-middle uk-align-center uk-text-center">
+                <span uk-icon="warning"></span> Для получения достоверной информации, необходимо профессионально обследовать ваш объект.                
             </div>
+            {% include el-contact-form.html %}
         {% endif %}
     </main>
     {{ site.time }}
