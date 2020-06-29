@@ -9,7 +9,7 @@ sass:
 
 plugins:
   - jekyll-sitemap
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
 
 collections:
   portfolio:
@@ -24,4 +24,9 @@ defaults:
     path: "" # an empty string here means all files in the project
   values:
     layout: "uni"
+
+# jekyll-seo-tag
+description: "Методы и средства оценки технического состояния механизмов, оборудования, конструкций и других технических объектов в труднодоступных местах, установление причин неисправностей, рекомендации по устранению их причин."
+logo: "/img/eagle.png"
+lang: ru_RU
 
