@@ -2,7 +2,7 @@
 # в дальнейшем они используются в других страницах,
 # например так: {{ site.data.var.email }}
 
-phones: 
+phones:   
   - "+7(903)777-77-77"
   - "+7(916)499-30-60"
 
@@ -15,7 +15,7 @@ mailing: 121309, Москва, Физкультурный проезд, 3 кор
 
 socials:
   - name: WhatsApp
-    val: _
+    val: _[WhatsApp]({% https://api.whatsapp.com/send?phone=79037253156 %}){:target="blank"}
   - name: Skype
     val: _
   - name: Instagram
