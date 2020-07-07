@@ -16,7 +16,7 @@ mailing: 121309, Москва, Физкультурный проезд, 3 кор
 socials:
   - name: WhatsApp
     val: "+7(903)725-31-56"
-    link:  "https://wa.me/{{ val }}"
+    link:  "https://wa.me/%s"
   - name: Skype
     val: _
   - name: Instagram
