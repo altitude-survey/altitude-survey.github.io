@@ -5,4 +5,5 @@ _site/
 *.xlsx
 *.docx
 *.rtf
+*.zip
 __test.html
