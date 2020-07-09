@@ -21,6 +21,7 @@ layout: category
 
 <div class="uk-section uk-section-muted">
 <div class="uk-container">
+
 ### **Где проводится обследования:**
 
 ![](/img/0/0.1.jpg){:class="uk-align-left uk-width-1-3"}
@@ -63,6 +64,7 @@ layout: category
 
 ###### отменяет действие align-left и align-right
 {% include el-contact-form.html %}
+
 </div></div>
 
 ### **Обследования подразделяются:** 
