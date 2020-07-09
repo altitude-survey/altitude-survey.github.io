@@ -19,7 +19,8 @@
         {% if false %}
             <img src="/img/toplogo/{{ page.sortid }}.jpg" class="uk-align-left">
         {% endif %}
-        <article class="uk-article">
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">        
                 {% if page.cat == 0 %}
                 <!-- pc={{page.cat}} -->
                     <h1 class="uk-article-title">{{ site.title }}</h1>
@@ -27,7 +28,8 @@
                     <h1 class="uk-article-title">{{ page.title }}</h1>
                 {% endif %}
                 {{ content }}
-        </article>
+            </div>
+        </div>
         {% if page.cat %}     
             <div class="uk-text-primary uk-text-middle uk-align-center uk-text-center">
                 <span uk-icon="warning"></span> Для получения достоверной информации, необходимо профессионально обследовать ваш объект.                

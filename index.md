@@ -19,8 +19,8 @@ layout: category
 – мотивированным __[заключением]({% link 1.4_Tech_conclus.md %})__, в котором описывается ход исследования и даются ответы на поставленные вопросы.   
 ***Полученное заключение является доказательством, свидетельствующим о наличии / отсутствии интересующих фактических данных в разрешении того или иного вопроса, и становится основанием для принятия вами решения.***
 
-<div class="uk-section uk-section-muted">
-<div class="uk-container" markdown="1">
+
+{% include i-sect-start.html sectclass="uk-section-muted" %}
 
 ### **Где проводится обследования:**
 
@@ -65,7 +65,7 @@ layout: category
 ###### отменяет действие align-left и align-right
 {% include el-contact-form.html %}
 
-</div></div>
+{% include i-sect-end.html %}
 
 ### **Обследования подразделяются:** 
 
