@@ -20,7 +20,7 @@ layout: category
 ***Полученное заключение является доказательством, свидетельствующим о наличии / отсутствии интересующих фактических данных в разрешении того или иного вопроса, и становится основанием для принятия вами решения.***
 
 
-{% include i-sect-start.html sectclass="uk-section-muted" %}
+{% include i-sect-end-start.html sectclass="uk-section-muted" %}
 
 ### **Где проводится обследования:**
 
@@ -65,7 +65,7 @@ layout: category
 ###### отменяет действие align-left и align-right
 {% include el-contact-form.html %}
 
-{% include i-sect-end.html %}
+{% include i-sect-end-start.html %}
 
 ### **Обследования подразделяются:** 
 
