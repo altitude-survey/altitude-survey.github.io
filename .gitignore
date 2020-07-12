@@ -7,3 +7,5 @@ _site/
 *.rtf
 *.zip
 __test.html
+_temp/
+*.exe
