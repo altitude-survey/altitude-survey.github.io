@@ -23,6 +23,7 @@ defaults:
 - scope:
     path: "" # an empty string here means all files in the project
   values:
+    permalink: /:slug/
     layout: "uni"
 
 # jekyll-seo-tag
