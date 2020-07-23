@@ -4,6 +4,7 @@ cat: 4
 main: true
 sortid: 4.0
 submenu: false
+permalink: /portfolio
 ---
 
 {% include el-slider.html  nimg = "3" %}
