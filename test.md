@@ -12,6 +12,8 @@ sitemap: false
 
 {% for s in site.data.var.contacts %}
 * s = {{ s }}
+* s[0] = {{ s[0] }}
+* s[1] = {{ s[1] }}
 {% endfor %}
 
 {% include el-contact-form.html %}
