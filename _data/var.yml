@@ -6,20 +6,60 @@ phones:
   - "+7(903)725-31-56"  
   - "+7(916)499-30-60"
 
-email:
-  - vysotnoe@mail.ru
+# email: vysotnoe@mail.ru
 
-address:  Москва, Большой Власьевский переулок, 14
+# address:  Москва, Большой Власьевский переулок, 14
 
-mailing: 121309, Москва, Физкультурный проезд, 3 корп. 1, 37
+# mailing: 121309, Москва, Физкультурный проезд, 3 корп. 1, 37
 
-socials:
-  - name: WhatsApp
+contacts:
+  email:
+    label: Напишите нам
+    val: vysotnoe@mail.ru
+    icon: commenting
+    link: mailto:vysotnoe@mail.ru
+
+  address:
+    label: Физ. адрес
+    val: Москва, Большой Власьевский переулок, 14
+    link: https://yandex.ru/maps/-/CCQlrJX8cC
+    icon: location
+
+  mailing:
+    label: Почтовый адрес
+    val: 121309, Москва, Физкультурный проезд, 3 корп. 1, 37
+    icon: mail
+
+  wa:
+    label: WhatsApp
+    icon: whatsapp
     val: "+7(903)725-31-56"
-    link:  "https://wa.me/79037253156"
-  - name: Skype
-    val: _
-  - name: Instagram
+    link: https://wa.me/79037253156
+
+  skype:
+    label: Skype
+    link: skype:username?call
     val: _
 
-sro: "Регистрационный номер СРО: СРО-С-265-10042013"
+  insta:
+    label: Instagram
+    icon: instagram
+    link: https://www.instagram.com/
+    val: _
+
+  sro:
+    label: Регистрационный номер СРО
+    val: СРО-С-265-10042013
+    icon: info
+
+  share:
+    label: Поделиться в соц. сетях
+    icon: social
+
+  links:
+    label: Мы на портале поставщиков
+    icon: link
+
+
+
+
