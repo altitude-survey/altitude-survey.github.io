@@ -4,6 +4,12 @@ permalink: "/_test"
 sitemap: false
 ---
 
+* site.data.var.contacts = {{ site.data.var.contacts }}
+* site.data.var.contacts[address] = {{ site.data.var.contacts[address] }}
+{% assign  address = site.data.var.contacts[address] %}
+* address = {{ address }}
+* address.val = {{ address.val }}
+
 {% include el-contact-form.html %}
 
 {% include el-youtube.html  id="c2pz2mlSfXA" %}
