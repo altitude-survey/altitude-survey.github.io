@@ -10,6 +10,10 @@ sitemap: false
 * address = {{ address }}
 * address.val = {{ address.val }}
 
+{% for s in site.data.var.contacts %}
+* s = {{ s }}
+{% endfor %}
+
 {% include el-contact-form.html %}
 
 {% include el-youtube.html  id="c2pz2mlSfXA" %}
