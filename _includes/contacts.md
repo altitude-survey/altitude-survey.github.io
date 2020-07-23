@@ -4,5 +4,4 @@
 * {{ site.data.var.contacts[address].val }}
 * <a href="{{ site.data.var.contacts[email].link }}">{{ site.data.var.contacts[email].val }}</a>
 
-<!-- site.data.var.contacts = {{ site.data.var.contacts }}-->
-<!-- site.data.var.contacts[address] = {{ site.data.var.contacts[address] }}-->
+
