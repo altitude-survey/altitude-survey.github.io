@@ -5,8 +5,8 @@ sitemap: false
 ---
 
 * site.data.var.contacts = {{ site.data.var.contacts }}
-* site.data.var.contacts[address] = {{ site.data.var.contacts[address] }}
-{% assign  address = site.data.var.contacts[address] %}
+* site.data.var.contacts['address'] = {{ site.data.var.contacts['address'] }}
+{% assign  address = site.data.var.contacts['address'] %}
 * address = {{ address }}
 * address.val = {{ address.val }}
 
