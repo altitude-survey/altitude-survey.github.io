@@ -4,7 +4,8 @@
       e.preventDefault();
       //document.body.style.backgroundImage = window.getComputedStyle(document.body).backgroundImage.replace(/(?<=_)\d(?=\.jpg)/i, e.key);
       let tag = document.querySelector(x.selector);
-      tag.setAttribute(tag.getAttribute(x.attrName).replace(x.regexp, e.key));
+      tag.setAttribute(x.attrName,tag.getAttribute(x.attrName).replace(x.regexp, e.key)
+      );
     }
   });
 })({
