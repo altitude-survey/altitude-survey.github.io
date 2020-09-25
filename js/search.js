@@ -1,23 +1,17 @@
-
-$(document).ready(function () {
-    // Search toggle
-    $(".search__toggle").on("click", function () {
-        $(".search-content").toggleClass("is--visible");
-        $(".initial-content").toggleClass("is--hidden");
-        // set focus on input
-        setTimeout(function () {
-            $(".search-content input").focus();
-        }, 400);
+(function() {
+  let script = document.createElement("script");
+  script.src = "/js/simple-jekyll-search.min.js";
+  script.onload = () =>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById("global-search-input"),
+      resultsContainer: document.getElementById(
+        "global-search-results-container"
+      ),
+      json: "/search.json"
     });
 
-
-    // Close search screen with Esc key
-    $(document).keyup(function (e) {
-        if (e.keyCode === 27) {
-            if ($(".initial-content").hasClass("is--hidden")) {
-                $(".search-content").toggleClass("is--visible");
-                $(".initial-content").toggleClass("is--hidden");
-            }
-        }
-    });
-}
+  document.head.append(script);
+  UIkit.util.on("#search-modal", "show", function() {
+    UIkit.util.$("#global-search-input").focus();
+  });
+})();

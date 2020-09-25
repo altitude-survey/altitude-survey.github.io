@@ -61,18 +61,25 @@
             </ul>
         </div>
 
-        <div class="nav-overlay uk-navbar-right">
-            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        {% comment %}
+                see _includes\search-form.html
+                <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: #search-modal; animation: uk-animation-fade" href="#"></a>
+        {% endcomment %}
+
+        <div class="nav-overlay uk-navbar-right"> 
+            <a class="uk-navbar-toggle" uk-search-icon href="#search-modal" uk-toggle></a>
         </div>
-        
-        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>    
+
+        {% comment %}
+        <div class="nav-overlay uk-navbar-left uk-flex-1 search-overlay" hidden>    
             <div class="uk-navbar-item uk-width-expand">
                 <form class="uk-search uk-search-navbar uk-width-1-1">
                     <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
                 </form>
             </div>    
-            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>      
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .search-overlay; animation: uk-animation-fade" href="#"></a>      
         </div>
+        {% endcomment %}
 
     </nav>
     {%- if page.submenu -%}
@@ -95,6 +102,9 @@
         </div>
     {% endif %}
 </div>
+
+{% include search-form.html %}
+
 {% comment %}       
 
 

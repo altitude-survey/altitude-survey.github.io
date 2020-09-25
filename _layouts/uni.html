@@ -18,11 +18,7 @@
     <meta name="apple-mobile-web-app-title" content="Высотноеобследование.рф">
     <meta name="application-name" content="Высотноеобследование.рф">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="/css/sw-0.css" />
-    <script src="/js/css_switch.js"></script>
-
+    <meta name="theme-color" content="#ffffff">    
 </head>
 <body>
     <!-- uni layout -->
@@ -50,47 +46,10 @@
         </div>
     </div>    
     {% include footer.html %}
-    <div id="modal-contact-form" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-            <button class="uk-modal-close-default" type="button" uk-close></button>  
-            <form class="uk-form-stacked" action="https://app.form2chat.io/f/95bac658.json" method="POST" accept-charset="UTF-8" id="contact-form">
-        
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-name">Ваше имя</label>
-                <div class="uk-form-controls">
-                <input name="name" class="uk-input" id="form-name" type="text" placeholder="Ваше имя">
-                </div>
-            </div>
-        
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-phone">Телефон</label>
-                <div class="uk-form-controls">
-                <input name="phone" class="uk-input" id="form-phone" type="tel" placeholder="Телефон" required>
-                </div>
-            </div>
-        
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-email">Почта</label>
-                <div class="uk-form-controls">
-                <input name="email" class="uk-input" id="form-email" type="email" placeholder="Почта">
-                </div>
-            </div>
-        
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-coment">Комментарии</label>
-                <div class="uk-form-controls">
-                <textarea name="coment" class="uk-textarea" id="form-coment" type="text" placeholder="Комментарии"></textarea>
-                </div>
-            </div>
-        
-            <div class="uk-margin uk-flex-center" uk-grid>
-                <button type="submit" class="uk-button uk-button-default">Отправить</button>
-            </div>
-            <input type="hidden" name="_gotyou">
-            </form>
-        </div>
-    </div>
+    {% include contact-form.html %}
     <script defer src='/js/contact-form.js'></script>
-    <script defer src=/js/dofit.js></script>   
+    <script defer src=/js/dofit.js></script>
+    <script async src="/js/css_switch.js"></script>
+    <script async src="/js/search.js"></script>   
 </body>
 </html>
