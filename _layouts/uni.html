@@ -90,53 +90,7 @@
             </form>
         </div>
     </div>
-    <script defer>
-        var form = document.getElementById("contact-form");
-    
-        form.onsubmit = function(e) {
-        e.preventDefault();
-    
-        var formData = new FormData(form);
-        var xhr = new XMLHttpRequest();
-    
-        xhr.open("POST", form.action, true);
-    
-        xhr.onload = function(e) {
-            var response = JSON.parse(xhr.response);
-            console.log(xhr.status);
-    
-            if (xhr.status >= 200 && xhr.status < 300) {
-            UIkit.modal(document.getElementById('modal-contact-form')).hide();
-            UIkit.notification({
-                message: 'Успешно отправлено!',
-                status: 'success',
-                pos: 'bottom-right',
-                timeout: 5000
-            });
-            } else {
-            UIkit.notification({
-                message: 'Ошибка!',
-                status: 'danger',
-                pos: 'bottom-right',
-                timeout: 5000
-            });
-            }
-        };
-    
-        xhr.send(formData);
-        };
-    </script>
-    <script defer>
-        document.addEventListener('readystatechange', () => console.log(document.readyState));
-        function doFit(){
-            console.log('doFit');
-            textFit(document.querySelectorAll('.uk-overlay h4'));            
-        }
-        window.onload = doFit;
-        window.onresize = doFit;
-        //UIkit.util.on(document, 'DOMContentLoaded',doFit);
-        document.addEventListener("DOMContentLoaded",doFit);
-        if (document.readyState == 'complete') doFit();
-    </script>   
+    <script defer src='/js/contact-form.js'></script>
+    <script defer src=/js/dofit.js></script>   
 </body>
 </html>
