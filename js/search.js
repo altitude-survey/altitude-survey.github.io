@@ -9,7 +9,7 @@
       ),
       json: "/search.json",
       limit: 20,
-      fuzzy: true
+      fuzzy: false
     });
 
   document.head.append(script);

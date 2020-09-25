@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/css/uikit.min.css?{{site.time | date: '%s' }}" />
+    <link rel="stylesheet" href="/css/uikit.min.css" />
     <link rel="stylesheet" href="/css/add.css?{{site.time | date: '%s' }}" />    
     <script src="/js/uikit.min.js"></script>
     <script src="/js/uikit-icons.min.js"></script>
@@ -46,10 +46,11 @@
         </div>
     </div>    
     {% include footer.html %}
+    {% include search-form.html %}
     {% include contact-form.html %}
     <script defer src='/js/contact-form.js'></script>
-    <script defer src=/js/dofit.js></script>
-    <script async src="/js/css_switch.js"></script>
-    <script async src="/js/search.js"></script>   
+    <script defer src=/js/dofit.js></script>    
+    <script async src="/js/search.js"></script>
+    <script async src="/js/css_switch.js"></script>   
 </body>
 </html>
