@@ -2,11 +2,12 @@
 layout: none
 ---
 [
-  {%- for page in site.pages -%}
+    {%- assign sort_pages = site.pages | sort: "sortid" -%}
+    {%- for page in sort_pages -%}
    {
-     {% if page.title != nil %}
+     {% if page.title != nil and page.cat %}
         "title"    : "{{ page.title | escape }}",
-        "category" : "{{ page.category }}",
+        "category" : "{{ page.cat }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
         "date"     : "{{ page.date }}",
