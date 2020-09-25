@@ -36,7 +36,7 @@ layout: category
 - дымовые трубы  
 - антенно-мачтовые и сооружения.  
 
-###### отменяет действие align-left и align-right
+###### &nbsp; {% comment %} отменяет действие align-left и align-right {% endcomment %}
 {% include el-contact-form.html %}
 
 ![](/img/0/0.2.jpg){:class="uk-align-left uk-width-1-3"}
@@ -47,7 +47,7 @@ layout: category
 - торговые комплексы  
 - склады  
 
-###### отменяет действие align-left и align-right
+###### &nbsp; {% comment %} отменяет действие align-left и align-right {% endcomment %}
 {% include el-contact-form.html %}
 
 ![](/img/0/0.3.jpg){:class="uk-align-left uk-width-1-3"}
@@ -62,7 +62,7 @@ layout: category
 - берегоукрепительные сооружения и устройства  
 - водонапорные башни   
 
-###### отменяет действие align-left и align-right
+###### &nbsp; {% comment %} отменяет действие align-left и align-right {% endcomment %}
 {% include el-contact-form.html %}
 
 {% include i-sect-end-start.html %}

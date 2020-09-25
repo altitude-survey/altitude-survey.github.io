@@ -40,7 +40,7 @@ sitemap: false
 Текст по центру страницы
 {: .uk-text-center}
 
-{% include el-slider.html  %}  добавляет в галерею все фотографии из папки  /img/galX.X, где X.X - sortid свойство страницы можно укзать nimg = "5"
+{% include el-slider.html  %}  добавляет в галерею все фотографии из папки  /img/galX.X, где X.X - sortid свойство страницы, можно укзать nimg = "5"
 
 ![](/img/0/0.1.1.jpg){:class="uk-align-left uk-width-1-2"}  Картинка будет слева на половину ширины.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet 
@@ -54,7 +54,7 @@ molestie tortor pellentesque. Integer pellentesque justo urna, sed porta eros vi
 Donec placerat tristique nunc ut laoreet. Maecenas id nunc ut ante fringilla finibus lacinia 
 quis nulla. Morbi et nibh id ante lobortis fermentum.
 
-###### отменяет действие align-left и align-right
+###### &nbsp; {% comment %} отменяет действие align-left и align-right {% endcomment %}
 ![](/img/0/0.1.2.00.jpg){:class="uk-align-right uk-width-1-3"} Картинка будет справа на треть ширины.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sagittis bibendum. Curabitur laoreet neque a ex pretium, in volutpat sem placerat. Morbi ac dui nec nunc aliquet 
 blandit gravida blandit dolor. Proin iaculis lorem ante, sodales feugiat orci varius in. Donec 
@@ -67,7 +67,7 @@ molestie tortor pellentesque. Integer pellentesque justo urna, sed porta eros vi
 Donec placerat tristique nunc ut laoreet. Maecenas id nunc ut ante fringilla finibus lacinia 
 quis nulla. Morbi et nibh id ante lobortis fermentum.
 
-###### отменяет действие align-left и align-right
+###### &nbsp; {% comment %} отменяет действие align-left и align-right {% endcomment %}
 
 
 
