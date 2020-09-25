@@ -5,16 +5,18 @@ layout: none
     {%- assign sort_pages = site.pages | sort: "sortid" -%}
 
     {%- for page in sort_pages -%}
-        {
-            {% if page.title != nil and page.cat %}
-                "title"    : "{{ page.title | escape }}",
-                "category" : "{{ page.cat }}",
-                "tags"     : "{{ page.tags | join: ', ' }}",
-                "url"      : "{{ site.baseurl }}{{ page.url }}",
-                "date"     : "{{ page.date }}",
-                "content"  : {{ page.content | strip_html | strip_newlines | jsonify }}
-            {% endif %}
-        } {% unless forloop.last %},{% endunless %}
+        {% if page.title != nil and page.cat %}
+            {
+            
+                    "title"    : "{{ page.title | escape }}",
+                    "category" : "{{ page.cat }}",
+                    "tags"     : "{{ page.tags | join: ', ' }}",
+                    "url"      : "{{ site.baseurl }}{{ page.url }}",
+                    "date"     : "{{ page.date }}",
+                    "content"  : {{ page.content | strip_html | strip_newlines | jsonify }}
+                
+            } ,
+        {% endif %}
     {%- endfor -%}
 
     {%- for doc in site.documents -%}
@@ -27,6 +29,5 @@ layout: none
             "content"  : {{ doc.content | strip_html | strip_newlines | jsonify }}
 
         } {% unless forloop.last %},{% endunless %}
-
-  {%- endfor -%}
+    {%- endfor -%}
 ]
