@@ -4,7 +4,9 @@ permalink: "/index.json"
 ---
 
 {
+	{% comment %}
 	"pages": {{ site.pages | jsonify }},
 	"documents": {{ site.documents | jsonify }},
-    "static_files": {{ site.static_files | jsonify }}
+	"static_files": {{ site.static_files | jsonify }}
+	{% endcomment %}
 }

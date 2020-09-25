@@ -8,7 +8,7 @@
         "global-search-results-container"
       ),
       json: "/search.json",
-      limit: 25,
+      limit: 20,
       fuzzy: true
     });
 
