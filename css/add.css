@@ -12,10 +12,11 @@ p>code {
    padding: 0;
  }
 
- h1 {
-   text-align: right;
- }
 
  .uk-section-muted {
   background-color: lightsteelblue;
  }
+
+ em {
+  color: #FF7C2F;
+}
