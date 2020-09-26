@@ -7,7 +7,7 @@
             {% for i in site.static_files %}
                 {% if i.path contains galpath %}
                     <li>
-                        <img src="/{{ galpath }}/{{ i.name }}" alt="">
+                        <img data-src="/{{ galpath }}/{{ i.name }}" alt="">
                     </li>
                 {% endif %}
             {% endfor %}
