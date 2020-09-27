@@ -25,7 +25,7 @@ layout: category
 ## **Где проводится обследования:**
 
 {% include el-img.html name="0/0.1.jpg" align="left" width="1/3" %}
-<-- ![](/img/0/0.1.jpg){:class="uk-align-left uk-width-1-3"} -->
+<!-- ![](/img/0/0.1.jpg){:class="uk-align-left uk-width-1-3"} -->
 #### **Объекты промышленного строительства:**     
 - заводы  
 - фабрики  

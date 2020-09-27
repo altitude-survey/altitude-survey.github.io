@@ -14,6 +14,11 @@ echo ------- %%a
 
 :end
 
+for /D %%a in (0.1, 0.2, 0.3) do (
+echo ------- %%a
+%magic% "0/%%a.jpg" -set filename:f %%t -resize 400  "../_temp/0/%%[filename:f].jpg"
+)
+
  
-forfiles /p "..\_temp" /m *.jpg  /s /c "%cd%\ect.exe -9 -strip -p  @path"
-forfiles /p "..\_temp" /m *.png  /s /c "%cd%\ect.exe -9 -strip -p  @path"
+forfiles /p "..\_temp" /m *.jpg  /s /c "%cd%\ect.exe -9 -strip -progressive  @path"
+forfiles /p "..\_temp" /m *.png  /s /c "%cd%\ect.exe -9 -strip   @path"
