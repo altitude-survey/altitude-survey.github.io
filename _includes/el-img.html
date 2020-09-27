@@ -1,4 +1,4 @@
-{%- assign path="{{ "/img/" append: include.name }}" -%}
+{%- capture path -%}{{ "/img/" | append: include.name }}{%- endcapture -%}
 
 {%- for file in site.static_files -%}
     {%- if file.path == path -%}
