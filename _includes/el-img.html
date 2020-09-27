@@ -13,14 +13,13 @@
 {%- else -%}
     {%- assign src="https://dummyimage.com/400x300/00d0db/000000.png&text=file+not+found" -%}
 {%- endif -%}
-{{ path }} - {{ exists }} - {{ src }}
-
 <img data-src="{{src}}" alt=""
     class="
         {%- unless include.noshadow -%} uk-box-shadow-medium {%- endunless -%}
+        {%- if include.align -%}uk-align-{{ include.align | append:' ' }} {%- endif -%}
         " uk-img>
 {% comment %} 
-        {%- if include.align -%}uk-align-{{ include.align | append:' ' }} {%- endif -%}
+        
         {%- if include.width -%}uk-width-{{ include.width | split '/'' | join '-' | append:' ' }} {%- endif -%}
         " 
         uk-img>
