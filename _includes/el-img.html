@@ -6,13 +6,14 @@
         {% break %}
     {%- endif -%}
 {%- endfor -%}
-{{ path }} - {{ exists }}
-{% comment %}
+
+
 {%- if exists -%}
     {%- assign src=path -%}
 {%- else -%}
     {%- assign src="https://dummyimage.com/400x300/00d0db/000000.png&text=file+not+found" -%}
 {%- endif -%}
+{{ path }} - {{ exists }} - {{ src }}
 
 
 <img data-src="{{src}}" alt="" 
@@ -22,4 +23,5 @@
         {%- if include.width -%}uk-width-{{ include.width | split '/'' | join '-' | append:' ' }} {%- endif -%}
         " 
         uk-img>
+{% comment %}
 {% endcomment %}
