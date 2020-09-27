@@ -13,7 +13,6 @@
     });
 
   document.head.append(script);
-  UIkit.util.on("#search-modal", "show", function() {
-    UIkit.util.$("#global-search-input").focus();
-  });
+  UIkit.util.on("#search-modal", "show", () =>
+    UIkit.util.$("#global-search-input").focus());
 })();
