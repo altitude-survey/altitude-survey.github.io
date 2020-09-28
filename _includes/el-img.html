@@ -1,4 +1,4 @@
-{%- capture path -%}{{ "/img/" | append: include.name }}{%- endcapture -%}
+.{%- capture path -%}{{ "/img/" | append: include.name }}{%- endcapture -%}
 
 {%- for file in site.static_files -%}
     {%- if file.path == path -%}
@@ -13,15 +13,13 @@
 {%- else -%}
     {%- assign src="https://dummyimage.com/400x300/00d0db/000000.png&text=file+not+found" -%}
 {%- endif -%}
-<img data-src="{{src}}" alt=""
-    class="
-        {%- unless include.noshadow -%} uk-box-shadow-medium {%- endunless -%}
-        {%- if include.align -%}uk-align-{{ include.align | append:' ' }} {%- endif -%}
-        " uk-img>
-{% comment %} 
-        
-        {%- if include.width -%}uk-width-{{ include.width | split '/'' | join '-' | append:' ' }} {%- endif -%}
-        " 
-        uk-img>
+{%- capture class -%}
+    {%- unless include.noshadow -%}uk-box-shadow-medium,{%- endunless -%}
+    {%- if include.align -%}uk-align-{{ include.align | append:',' }}{%- endif -%}  
+{%- endcapture -%}
+<img data-src="{{src}}" alt="" class="{{ class | split ',' | join ' '}}" uk-img>
 
+{% comment %}
+        {%- if include.width -%}uk-width-{{ include.width | split '/'' | join '-' | append:' ' }} {%- endif -%}
 {% endcomment %}
+.
