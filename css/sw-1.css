@@ -1,4 +1,8 @@
-﻿nav.uk-navbar-container li{
+﻿em{
+  color: #c24700;
+}
+
+.uk-navbar-nav>li>a {
     font-size: large;
       font-weight: 600;
   }
