@@ -17,9 +17,11 @@
     {%- unless include.noshadow -%}uk-box-shadow-medium,{%- endunless -%}
     {%- if include.align -%}uk-align-{{ include.align | append:',' }}{%- endif -%}  
 {%- endcapture -%}
+    {{src}} - {{class}}
+{% comment %}
 <img data-src="{{src}}" alt="" class="{{ class | split ',' | join ' '}}" uk-img>
 
-{% comment %}
+
         {%- if include.width -%}uk-width-{{ include.width | split '/'' | join '-' | append:' ' }} {%- endif -%}
 {% endcomment %}
 .
