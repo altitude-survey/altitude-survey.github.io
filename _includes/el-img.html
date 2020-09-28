@@ -17,9 +17,9 @@
     {%- unless include.noshadow -%}uk-box-shadow-medium,{%- endunless -%}
     {%- if include.align -%}uk-align-{{ include.align | append:'' }}{%- endif -%}  
 {%- endcapture -%}
-{%- assign classlist=class | split ',' | join ' ' -%}
+{%- assign classlist=class | split ',' -%}
     {{src}} - {{class}}
-    <img data-src="{{src}}" alt="" class="{{ classlist }}" uk-img>
+    <img data-src="{{src}}" alt="" class="a" uk-img>
 {%- comment -%}
 
 
