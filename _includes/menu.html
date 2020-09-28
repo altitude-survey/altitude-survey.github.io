@@ -109,7 +109,6 @@
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-        </ul>
         {%- assign sort_pages = site.pages | sort: "sortid" -%}
         {%- for p in sort_pages -%}
         {%- capture upnd_title -%}
@@ -137,30 +136,13 @@
                     <div class="uk-navbar-subtitle">{{ line }}</div>
                     {%- endif -%}
                     {%- endfor -%}
-                </div>
-                {%- if p.submenu and p.cat == page.cat -%}
-                <span uk-icon="chevron-down"></span>
-                {%- elsif p.submenu -%}
-                <span uk-icon="chevron-right"></span>
-                {%- endif -%}
+                </div>              
 
-            </a>
-            {% if p.submenu and p.cat != page.cat %}
-            <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                    {%- for s in sort_pages -%}
-                    {% if s.main != true and s.cat == p.cat %}
-                    <li>
-                        <a href="{{ s.url}}" class="uk-button-text">{{ s.title }}</a>
-                    </li>
-                    {% endif %}
-                    {%- endfor -%}
-                </ul>
-            </div>
-            {% endif %}
+            </a>            
         </li>
         {%- endif -%}
         {%- endfor -%}
+    </ul>
     </div>
 </div>
 
