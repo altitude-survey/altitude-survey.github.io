@@ -29,15 +29,19 @@
                         {%- endif -%}
                                                   
                             <a href="{{ p.url }}" class="uk-button-text">
-                                <div class="uk-text-center">                                
-                                    {%- for line in menu_title -%}
-                                        {%- if forloop.first == true -%}
-                                            {{ line }}
-                                        {%- else -%}
-                                            <div class="uk-navbar-subtitle">{{ line }}</div>
-                                        {%- endif -%}
-                                    {%- endfor -%}
-                                </div>                                
+                                {%- if p.cat == 0 -%}
+                                    <span uk-icon="home"></span>
+                                {%- else -%}
+                                    <div class="uk-text-center">                                
+                                        {%- for line in menu_title -%}
+                                            {%- if forloop.first == true -%}
+                                                {{ line }}
+                                            {%- else -%}
+                                                <div class="uk-navbar-subtitle">{{ line }}</div>
+                                            {%- endif -%}
+                                        {%- endfor -%}
+                                    </div>
+                                {%- endif -%}                                 
                                 {%- if p.submenu and p.cat == page.cat -%}
                                     <span uk-icon="chevron-down"></span>
                                 {%- elsif p.submenu -%}
@@ -128,9 +132,6 @@
             {%- endif -%}
 
             <a href="{{ p.url }}" class="uk-button-text">
-                {%- if p.cat == 0 -%}
-                    <span uk-icon="home"></span>
-                {%- else -%}
                 <div class="uk-text-center">
                     {%- for line in menu_title -%}
                     {%- if forloop.first == true -%}
@@ -140,8 +141,6 @@
                     {%- endif -%}
                     {%- endfor -%}
                 </div>
-                {%- endif -%}              
-
             </a>            
         </li>
         {%- endif -%}
