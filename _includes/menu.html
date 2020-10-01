@@ -112,11 +112,13 @@
         {%- assign sort_pages = site.pages | sort: "sortid" -%}
         {%- for p in sort_pages -%}
         {%- capture upnd_title -%}
-        {% if p.cat == 6.0 %}
+        {%- if p.cat == 6.0 -%}
         {{ p.title }} {{ site.data.var.phones[0] }}
-        {% else %}
+        {%- elsif page.cat == 0 -%}
+        <span uk-icon="home"></span>
+        {%- else -%}
         {{ p.title }}
-        {% endif %}
+        {%- endif -%}
         {%- endcapture -%}
         {%- assign menu_title = upnd_title | split: " " -%}
         {%- if p.main -%}
