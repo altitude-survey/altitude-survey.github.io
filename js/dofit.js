@@ -6,7 +6,7 @@
       console.log("doFit");
       textFit(document.querySelectorAll(".uk-overlay h4"));
     }
-    document.addEventListener("resize", doFit);
+    window.addEventListener("resize", doFit);
     if (document.readyState == "loading") {
       document.addEventListener("DOMContentLoaded", doFit);
     } else {
