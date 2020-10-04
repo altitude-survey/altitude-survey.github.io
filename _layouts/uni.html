@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head>    
+    <script src="/js/uikit.min.js"></script>
     <link rel="stylesheet" href="/css/uikit.min.css" />
     <link rel="stylesheet" href="/css/add.css?{{site.time | date: '%s' }}" />    
-    <script src="/js/uikit.min.js"></script>
-    <script src="/js/uikit-icons.min.js"></script>
-    <script src="/js/textFit.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
@@ -18,9 +16,7 @@
     <meta name="apple-mobile-web-app-title" content="Высотноеобследование.рф">
     <meta name="application-name" content="Высотноеобследование.рф">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    {%- include google-gtag.html -%}
-    {%- include yandex-metr.html -%}   
+    <meta name="theme-color" content="#ffffff">     
 </head>
 <body>
     <!-- uni layout -->
@@ -50,9 +46,12 @@
     {% include footer.html %}
     {% include search-form.html %}
     {% include contact-form.html %}
+    <script defer src="/js/uikit-icons.min.js"></script>
     <script defer src='/js/contact-form.js'></script>
     <script defer src=/js/dofit.js></script>    
     <script async src="/js/search.js"></script>
-    <script async src="/js/css_switch.js"></script>   
+    <script async src="/js/css_switch.js"></script>
+    {%- include google-gtag.html -%}
+    {%- include yandex-metr.html -%}     
 </body>
 </html>
