@@ -1,9 +1,9 @@
 (function(x) {
   let script = document.createElement("script");
   script.src = "/js/textFit.min.js";
-  script.onload = () => {
-    function doFit() {
-      console.log("doFit:",doFit.caller);
+  script.onload = (e) => {
+    function doFit(ev) {
+      console.log("doFit:",ev.type);
       textFit(document.querySelectorAll(".uk-overlay h4"));
     }
     window.addEventListener("resize", doFit);
@@ -11,7 +11,7 @@
     if (document.readyState == "loading") {
       document.addEventListener("DOMContentLoaded", doFit);
     } else {
-      doFit();
+      doFit(e);
     }
   };
   document.head.append(script);
