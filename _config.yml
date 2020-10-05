@@ -1,6 +1,7 @@
 ---
 title: Высотное обследование.рф
 timezone: Europe/Moscow
+encoding: UTF-8
 
 
 sass:
@@ -32,7 +33,7 @@ defaults:
 - scope:
     path: "_v2" 
   values:
-    permalink: /v2/:name/:title/:slug/
+    permalink: /:collection/:name/:caption/
     layout: "v2"
 
 # jekyll-seo-tag
