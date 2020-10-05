@@ -4,7 +4,6 @@ cat: 0
 main: true
 sortid: 0
 submenu: false
-layout: category
 ---
 
 #### **Высотное обследование** 

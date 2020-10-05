@@ -32,7 +32,7 @@ defaults:
 - scope:
     path: "v2" 
   values:
-    # permalink: /:name/:title/:slug/
+    permalink: /v2/:name/:title/:slug/
     layout: "v2"
 
 # jekyll-seo-tag
