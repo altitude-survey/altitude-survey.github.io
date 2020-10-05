@@ -100,10 +100,4 @@ jekyll: {{ jekyll | jsonify }}<br/>
         <li>site.{{ var }} = {{ site[var] }}</li>            
         {% endunless %}        
     {% endfor%}
-    <hr>
-    {% for var in page %}
-        {% unless page[var].first %}
-        <li>site.{{ var }} = {{ site[var] }}</li>            
-        {% endunless %}        
-    {% endfor%}
 </ul>
