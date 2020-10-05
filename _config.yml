@@ -33,7 +33,7 @@ defaults:
 - scope:
     path: "_v2" 
   values:
-    permalink: /:collection/:name/:caption/
+    permalink: /:collection/:name/
     layout: "v2"
 
 # jekyll-seo-tag
