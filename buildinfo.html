@@ -102,7 +102,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
     {% endfor%}
     <hr>
     {% for var in page %}
-    {% if var == "content" or var== "contentbuild" %}{% continue %}{% endif %}
+    {% if var == "content" %}{% continue %}{% endif %}
         {% unless page[var].first %}
         <li>page.{{ var }} = {{ page[var] }}</li>            
         {% endunless %}        

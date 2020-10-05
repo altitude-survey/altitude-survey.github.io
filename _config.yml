@@ -30,7 +30,7 @@ defaults:
     # permalink: /:name/:title/:slug/
     layout: "uni"
 - scope:
-    path: "v2" 
+    path: "_v2" 
   values:
     permalink: /v2/:name/:title/:slug/
     layout: "v2"
