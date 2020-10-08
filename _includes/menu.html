@@ -21,11 +21,12 @@
                     {%- endcapture -%}
                     {%- assign menu_title = upnd_title | split: " " -%}
                     {%- if p.main -%}
+                    {% assign pcat = p.cat | string %}
 
                         {% if p.url == page.url %}
-                            <li class="uk-active" data-priority="{{ site.data.var.menu_priority[p.cat] }}">  
+                            <li class="uk-active" data-priority="{{ site.data.var.menu_priority[pcat] }}">  
                         {%- else -%}
-                            <li data-priority="{{ site.data.var.menu_priority[p.cat] }}">  
+                            <li data-priority="{{ site.data.var.menu_priority[pcat] }}">  
                         {%- endif -%}
                                                   
                             <a href="{{ p.url }}" class="uk-button-text">
