@@ -21,7 +21,7 @@
                     {%- endcapture -%}
                     {%- assign menu_title = upnd_title | split: " " -%}
                     {%- if p.main -%}
-                    {% assign pcat = p.cat | string %}
+                    {%- capture pcat -%}{{ p.cat }}{%- endcapture -%}
 
                         {% if p.url == page.url %}
                             <li class="uk-active" data-priority="{{ site.data.var.menu_priority[pcat] }}">  
