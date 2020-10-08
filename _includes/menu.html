@@ -23,7 +23,7 @@
                     {%- if p.main -%}
 
                         {% if p.url == page.url %}
-                            <li class="uk-active">  
+                            <li class="uk-active" data-priority="{{ site.data.var.menu_priority[p.cat] }}">  
                         {%- else -%}
                             <li>  
                         {%- endif -%}
