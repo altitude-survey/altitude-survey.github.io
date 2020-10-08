@@ -15,11 +15,9 @@ plugins:
 collections:
   portfolio:
     output: true
-    layout: portfolio
     permalink: /portfolio/:title
   v2:
     output: true
-    layout: v2
     permalink: /v2/:title
     
 

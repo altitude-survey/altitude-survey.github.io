@@ -3,19 +3,6 @@ title: Проверка
 permalink: "/_test"
 sitemap: false
 ---
-{% comment %}
-* site.data.var.contacts = {{ site.data.var.contacts }}
-* site.data.var.contacts['address'] = {{ site.data.var.contacts['address'] }}
-{% assign  address = site.data.var.contacts['address'] %}
-* address = {{ address }}
-* address.val = {{ address.val }}
-
-{% for s in site.data.var.contacts %}
-* s = {{ s }}
-* s[0] = {{ s[0] }}
-* s[1] = {{ s[1] }}
-{% endfor %}
-{% endcomment %}
 
 {% include el-contact-form.html %}
 
