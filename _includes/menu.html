@@ -1,6 +1,6 @@
 <div class="" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left" uk-toggle="target: #offcanvas-nav;" uk-toggle>
+        <div class="uk-navbar-left" class="uk-logo">
                 <a class="" href="#offcanvas-nav" uk-toggle>
                     <img data-src="/img/eagle.png" data-width="100" uk-img>
                 </a>
@@ -10,7 +10,12 @@
         </div>
         <div class="uk-navbar-center nav-overlay uk-visible@l">
             <ul class="uk-navbar-nav">
-                {%- assign sort_pages = site.pages | sort: "sortid" -%}
+                {% if page.collection == "v2" %}
+                    {%- assign sort_pages = site.v2 | sort: "sortid" -%}
+                {% else %}
+                    {%- assign sort_pages = site.pages | sort: "sortid" -%}
+                {% endif %}
+                
                 {%- for p in sort_pages -%}
                     {%- capture upnd_title -%}
                         {% if p.cat == 6.0 %}
