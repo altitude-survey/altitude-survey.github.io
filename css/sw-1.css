@@ -6,3 +6,7 @@
     font-size: large;
       font-weight: 600;
   }
+
+.uk-section-muted {
+  background: linear-gradient(171deg, rgba(147,185,236,1) 39%, rgba(111,147,195,1) 100%);
+}
