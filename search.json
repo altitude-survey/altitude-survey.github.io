@@ -25,6 +25,8 @@ layout: none
                 "date"     : "{{ doc.date }}",
                 "content"  : {{ doc.content | markdownify | strip_html | strip_newlines | jsonify }}        
             }
+        {%- else -%}
+            {}
         {%- endif -%}
         {%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
