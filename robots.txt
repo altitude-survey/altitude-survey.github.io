@@ -7,4 +7,5 @@ Disallow: /_buildinfo
 Disallow: /_admin
 Disallow: /_test
 Disallow: /404.html
+Disallow: /v2/
 Sitemap: {{ site.url }}/sitemap.xml

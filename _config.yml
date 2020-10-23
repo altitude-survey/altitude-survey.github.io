@@ -31,8 +31,9 @@ defaults:
 - scope:
     path: "_v2" 
   values:
-    permalink: /:collection/:name/
+    permalink: /:collection/:name
     layout: "v2"
+    sitemap: false
 
 # jekyll-seo-tag
 description: "Методы и средства оценки технического состояния механизмов, оборудования, конструкций и других технических объектов в труднодоступных местах, установление причин неисправностей, рекомендации по устранению их причин."
