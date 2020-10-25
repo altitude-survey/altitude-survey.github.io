@@ -6,6 +6,7 @@ User-agent: *
 {%- for p in site.pages -%}
 {%- if p.sitemap == false -%}
 Disallow: {{ p.url }}
+
 {%- endif -%}
 {%- endfor -%}
 Disallow: /v2/
