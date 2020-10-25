@@ -13,6 +13,7 @@ plugins:
   - jekyll-seo-tag
 
 theme: ""
+debugpagevars: true # показывает переменные в тексте страничек
 
 
 
