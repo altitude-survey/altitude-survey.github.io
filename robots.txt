@@ -4,7 +4,7 @@ layout: none
 {% capture newLine %}
 {% endcapture %}
 
-User-agent: *
+User-agent: * {{ newLine }}
 {%- for p in site.pages -%}
 {%- if p.sitemap == false -%}
 Disallow: {{ p.url }} {{ newLine }}
