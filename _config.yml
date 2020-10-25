@@ -28,7 +28,7 @@ defaults:
 - scope:
     path: "" # an empty string here means all files in the project
   values:
-    # permalink: /:name/:title/:slug/
+    permalink: /:slug/
     layout: "uni"
 - scope:
     path: "_v2" 
