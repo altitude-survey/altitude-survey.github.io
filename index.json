@@ -1,6 +1,7 @@
 ---
 layout: null
-permalink: "/index.json"
+permalink: "/_/index.json"
+sitemap: false
 ---
 
 {

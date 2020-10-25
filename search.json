@@ -1,7 +1,9 @@
 ---
 layout: none
+permalink: /_/search.json
 sitemap: false
 ---
+
 [
     {%- assign sort_pages = site.pages | sort: "sortid" -%}
 

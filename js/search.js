@@ -7,7 +7,7 @@
       resultsContainer: document.getElementById(
         "global-search-results-container"
       ),
-      json: "/search.json",
+      json: "/_/search.json",
       limit: 20,
       fuzzy: false
     });
