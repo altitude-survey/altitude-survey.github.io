@@ -13,8 +13,8 @@ plugins:
   - jekyll-seo-tag
 
 theme: ""
-permalink: /:slug
-relative_permalinks: true
+permalink: /:title/:slug
+
 
 collections:
   portfolio:
