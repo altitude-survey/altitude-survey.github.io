@@ -56,11 +56,13 @@
         {%- include google-gtag.html -%}
         {%- include yandex-metr.html -%}
     {%- endif -%}
+    {% capture newLine %}
+    {% endcapture %}
     <script type="text/plain">
-        {% for v in page %}
-            {% if v[0] == "content" or v[0] == "excerpt" %}{% continue %}{% endif %}
-            page.{{ v[0] }} == {{ v[1] }}                   
-        {% endfor %}
+        {%- for v in page -%}
+            {%- if v[0] == "content" or v[0] == "excerpt" -%}{% continue %}{%- endif -%}
+            page.{{ v[0] }} == {{ v[1] }} {{ newLine  }}
+        {%- endfor -%}
     </script>     
 </body>
 </html>
