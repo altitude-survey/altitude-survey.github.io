@@ -18,7 +18,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
                 {% if p.main %}☑{% endif %}
                 {% if p.submenu %}🍔{% endif %}
             </td>
-            <td>{{ p.sortid }}</td>
+            <td>{{ p.sortid }}{%- if page.sitemap != false -%}{%- else -%}👻{%- endif -%}</td>
             <td>{{ p.title }}</td>
             <td><a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a></td>
             <td>{{ p.layout }}</td>
