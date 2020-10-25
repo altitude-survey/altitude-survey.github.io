@@ -60,14 +60,14 @@ jekyll: {{ jekyll | jsonify }}<br/>
     {% endfor %}
 </table>
 
-<ul><
+<ul>
 {% for d in site.documents %}
 <li>
     <a href="{{ d.url}}?{{site.time | date: '%s' }}">{{ d.url}}</a>
     <details>
             <summary></summary>
             {% for p in d %}
-            {% if p == "content" or p == "output" or p=="next" or p=="previous" %}{% continue %}{% endif %}
+            {% if p == "content" or p == "output" or p=="next" or p=="previous" or p=="excerpt" %}{% continue %}{% endif %}
                 {{ p }} = {{ d[p] }}<br/>
             {% endfor %}
     </details>
