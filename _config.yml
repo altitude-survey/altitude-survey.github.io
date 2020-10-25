@@ -30,7 +30,7 @@ defaults:
 - scope:
     path: "" # an empty string here means all files in the project
   values:
-    permalink: /:basename/:title/:slug
+    permalink: /:title
     layout: "uni"
 - scope:
     path: "_v2" 
