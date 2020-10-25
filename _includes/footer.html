@@ -34,5 +34,6 @@
             </div>
         </div>
     </div>
-    <div class="uk-text-muted uk-text-right">{{ site.time }}</div>
+    <div class="uk-text-muted uk-text-right">{{ site.time }}{%- if page.sitemap != false -%}🔍{%- elseif -%}👻{%- endif -%}
+    </div>
 </div>

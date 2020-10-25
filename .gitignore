@@ -6,6 +6,7 @@ _site/
 *.docx
 *.rtf
 *.zip
+*.gz
 __test.html
 _temp/
 *.exe

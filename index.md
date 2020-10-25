@@ -22,7 +22,7 @@ layout: category
 
 {% include i-sect-end-start.html sectclass="uk-section-muted" %}
 
-## **Где проводится обследования:**
+## **Где проводятся обследования:**
 
 {% include el-img.html name="0/0.1.jpg" align="left" width="1/3" %}
 #### **Объекты промышленного строительства:**     
