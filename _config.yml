@@ -12,6 +12,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+theme: ""
+
 collections:
   portfolio:
     output: true
