@@ -103,6 +103,6 @@ jekyll: {{ jekyll | jsonify }}<br/>
     <hr>
     {% for v in page %}
     {% if v == "content" or v == "excerpt" %}{% continue %}{% endif %}
-        <li>page.{{ v }} :: {{ page[v] }}</li>                  
+        <li>page.{{ v }} :: {{ page[v] }} __ {{ v[0] }}</li>                  
     {% endfor%}
 </ul>
