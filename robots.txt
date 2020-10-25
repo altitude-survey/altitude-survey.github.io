@@ -1,12 +1,13 @@
 ---
 layout: none
 ---
+{% capture newLine %}
+{% endcapture %}
 
 User-agent: *
 {%- for p in site.pages -%}
 {%- if p.sitemap == false -%}
-Disallow: {{ p.url }}
-
+Disallow: {{ p.url }} {{ newLine }}
 {%- endif -%}
 {%- endfor -%}
 Disallow: /v2/
