@@ -1,5 +1,6 @@
 ---
 layout: none
+sitemap: false
 ---
 [
     {%- assign sort_pages = site.pages | sort: "sortid" -%}
