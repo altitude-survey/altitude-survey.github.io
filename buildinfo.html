@@ -10,7 +10,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 
 <h3>Pages:</h3>
 <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
-    {% assign sort_pages = site.pages | sort: "cat" | sort: "sortid" %}
+    {% assign sort_pages = site.pages | sort: "url" || sort: "cat" | sort: "sortid" %}
     {% for p in sort_pages %}
         <tr>
             <td>
