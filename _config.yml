@@ -13,6 +13,7 @@ plugins:
   - jekyll-seo-tag
 
 theme: ""
+permalink: /:slug
 
 collections:
   portfolio:
@@ -28,7 +29,6 @@ defaults:
 - scope:
     path: "" # an empty string here means all files in the project
   values:
-    permalink: /:title/:slug
     layout: "uni"
 - scope:
     path: "_v2" 
