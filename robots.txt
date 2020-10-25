@@ -6,9 +6,10 @@ layout: none
 
 User-agent: * {{ newLine }}
 {%- for p in site.pages -%}
-{%- if p.sitemap == false -%}
+{%- if p.sitemap == false and p.dir != '/_/'-%}
 Disallow: {{ p.url }} {{ newLine }}
 {%- endif -%}
 {%- endfor -%}
 Disallow: /v2/
+Disallow: /_/
 Sitemap: {{ site.url }}/sitemap.xml

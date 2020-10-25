@@ -1,6 +1,6 @@
 ---
 title: админка
-permalink: "/_admin"
+permalink: "/_/admin"
 sitemap: false
 ---
 

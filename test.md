@@ -1,6 +1,6 @@
 ---
 title: Проверка
-permalink: "/_test"
+permalink: "/_/test"
 sitemap: false
 ---
 
