@@ -1,6 +1,6 @@
 ---
 title: Информация по сборке
-layout: default
+layout: minimal
 sitemap: false
 permalink: /_/buildinfo
 ---
@@ -29,6 +29,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 </table>
 
 <h3>Documents:</h3>
+{% comment %}
 <table>
     {% for d in site.documents %}
         {% if forloop.first == true %}
@@ -59,6 +60,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
         </tr>
     {% endfor %}
 </table>
+{% endcomment %}
 
 <ul>
 {% for d in site.documents %}
