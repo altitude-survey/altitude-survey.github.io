@@ -5,6 +5,8 @@
     function doFit(ev) {
       console.log("doFit:",ev.type);
       textFit(document.querySelectorAll(".uk-overlay h4"));
+      let la=document.getElementById("logo-anch");
+      la.style.width=la.offsetHeight+'px';
     }
     window.addEventListener("resize", doFit);
     window.addEventListener('orientationchange', doFit);

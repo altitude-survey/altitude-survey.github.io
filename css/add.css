@@ -1,3 +1,10 @@
+nav.uk-navbar-container.uk-navbar{
+  background-image: url(/img/eagle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 p>code {
    visibility: hidden; 
    margin-left: 1.5em;
