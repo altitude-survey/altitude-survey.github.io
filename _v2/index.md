@@ -37,6 +37,7 @@ submenu: false
 
 ###### &nbsp;  
 <!-- тут была кнопка -->
+{% include el-anim-contact-button.html %}
 
 {% include el-img.html name="0/0.2.jpg" align="left" width="1/3" %}
 #### **Объекты гражданского строительства:**   
@@ -48,6 +49,7 @@ submenu: false
 
 ###### &nbsp;  
 <!-- тут была кнопка -->
+{% include el-anim-contact-button.html %}
 
 {% include el-img.html name="0/0.3.jpg" align="left" width="1/3" %}
 #### **Объекты транспортного строительства:**  
@@ -63,6 +65,7 @@ submenu: false
 
 ###### &nbsp;  
 <!-- тут была кнопка -->
+{% include el-anim-contact-button.html %}
 
 {% include i-sect-end-start.html %}
 

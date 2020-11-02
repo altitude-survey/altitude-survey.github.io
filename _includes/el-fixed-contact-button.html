@@ -1,3 +1,8 @@
-<div class="uk-position-small uk-position-bottom-right uk-position-fixed">
-    {% include el-contact-form.html %}
+<div id="fixed-contact-button-div" class="uk-position-small uk-position-bottom-right uk-position-fixed">
+    <button class="uk-button uk-button-danger uk-button-large uk-box-shadow-large" type="button" uk-toggle="target: #modal-contact-form">
+            {%- if include.icon -%}  
+                <span uk-icon="{{ include.icon }}"></span>
+            {%- endif -%} 
+                {{ include.text | default:'Связаться с нами' }}
+    </button>
 </div>
