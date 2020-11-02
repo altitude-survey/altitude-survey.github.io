@@ -36,7 +36,7 @@ submenu: false
 - антенно-мачтовые и сооружения.  
 
 ###### &nbsp;  
-{% include el-contact-form.html %}
+<!-- тут была кнопка -->
 
 {% include el-img.html name="0/0.2.jpg" align="left" width="1/3" %}
 #### **Объекты гражданского строительства:**   
@@ -47,7 +47,7 @@ submenu: false
 - склады  
 
 ###### &nbsp;  
-{% include el-contact-form.html %}
+<!-- тут была кнопка -->
 
 {% include el-img.html name="0/0.3.jpg" align="left" width="1/3" %}
 #### **Объекты транспортного строительства:**  
@@ -62,7 +62,7 @@ submenu: false
 - водонапорные башни   
 
 ###### &nbsp;  
-{% include el-contact-form.html %}
+<!-- тут была кнопка -->
 
 {% include i-sect-end-start.html %}
 
@@ -93,3 +93,5 @@ submenu: false
 6. СП {% include el-pdf.html text="64.13330.2017" name="СП 64.13330.2017.pdf" %} «СНиП II-25-80 Деревянные конструкции»;    
 7. СП {% include el-pdf.html text="13-102—2003" name="СП 13-102—2003.pdf" %} «Правила обследования несущих конструкций зданий и сооружений».    
 8. Правила по охране труда при работе на высоте от 28 марта 2014 г. {% include el-pdf.html text="N 155н" name="N 155н.pdf" %};
+
+{% include el-fixed-contact-button %}
