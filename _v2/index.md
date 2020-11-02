@@ -94,4 +94,4 @@ submenu: false
 7. СП {% include el-pdf.html text="13-102—2003" name="СП 13-102—2003.pdf" %} «Правила обследования несущих конструкций зданий и сооружений».    
 8. Правила по охране труда при работе на высоте от 28 марта 2014 г. {% include el-pdf.html text="N 155н" name="N 155н.pdf" %};
 
-{% include el-fixed-contact-button %}
+{% include el-fixed-contact-button.html %}
