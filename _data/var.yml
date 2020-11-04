@@ -42,7 +42,7 @@ contacts:
 
   sro:
     label: Регистрационный номер СРО
-    val: СРО-С-265-10042013
+    val: 
     icon: info
 
   share:
