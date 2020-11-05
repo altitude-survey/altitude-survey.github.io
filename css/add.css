@@ -4,6 +4,10 @@ nav.uk-navbar-container.uk-navbar{
     background-size: contain;
 }
 
+.uk-navbar-nav>li>a {
+  font-size: large;
+    font-weight: 600;
+}
 
 p>code {
    visibility: hidden; 
