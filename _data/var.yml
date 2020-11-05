@@ -14,7 +14,7 @@ contacts:
 
   address:
     label: Физ. адрес
-    val: Москва, Большой Власьевский переулок, 14
+    val: Москва
     link: https://yandex.ru/maps/-/CCQlrJX8cC
     icon: location
 
@@ -42,7 +42,7 @@ contacts:
 
   sro:
     label: Регистрационный номер СРО
-    val: СРО-С-265-10042013
+    val: 
     icon: info
 
   share:
