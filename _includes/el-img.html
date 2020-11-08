@@ -15,6 +15,6 @@
     {%- if include.align -%}uk-align-{{ include.align }},{%- endif -%}
     {%- if include.width -%}uk-width-{{ include.width | split: '/' | join: '-' }}{%- endif -%}  
 {%- endcapture -%}
-    <img data-src="{{src}}" alt="" class="{{class | split: ',' | join: ' ' }}" uk-img>
+    <img data-src="{{src}}" alt="" class="{{class | split: ',' | join: ' ' }}" alt="{{ include.alt }}" uk-img>
 {%- comment -%}        
 {%- endcomment -%}
