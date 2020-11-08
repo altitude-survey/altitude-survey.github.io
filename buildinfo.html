@@ -92,8 +92,9 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <ol>
     {% for f in site.static_files %}
         <li>
-            <a href="{{ f.path}}">{{ f.path}}</a>
-            {% for p in f %} {{ p }} = {{ f[p] }}&nbsp;&semi;&nbsp;{% endfor %}
+            <a href="{{ f.path}}" title="{% for p in f %} {{ p }} = {{ f[p] }}&nbsp;&semi;&nbsp;{% endfor %}">
+                {{- f.path -}}
+            </a>
         </li>
     {% endfor %}
 </ol>
