@@ -10,14 +10,14 @@ jekyll: {{ jekyll | jsonify }}<br/>
 
 <h3>Pages:</h3>
 <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
-    <th>
-        <td>cat, main, submenu</td>
-        <td>sortid</td>
-        <td>title</td>
-        <td>url</td>
-        <td>layout</td>
-        <td>path</td>
-    </th>
+    <tr>
+        <th>cat, main, submenu</td>
+        <th>sortid</th>
+        <th>title</th>
+        <th>url</th>
+        <th>layout</th>
+        <th>path</th>
+    </tr>
     {% assign sort_pages = site.pages | sort: "url" || sort: "cat" | sort: "sortid" %}
     {% for p in sort_pages %}
         <tr>
