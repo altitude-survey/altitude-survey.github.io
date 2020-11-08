@@ -28,10 +28,10 @@ jekyll: {{ jekyll | jsonify }}<br/>
                 {% endif %}
             </td>
             <td><span title="sortid (сортировка для меню)">{{ p.sortid }}</span>{%- if p.sitemap != false -%}{%- else -%}<span title="sitemap (удалено из поиска)">👻</span>{%- endif -%}</td>
-            <td><span title="{% for v in p %}{% if v[0] == "content" or v[0] == "excerpt" %}{% continue %}{% endif %}p.{{ v[0] }} = {{ v[1] }}; {% endfor %}">{{ p.title }}</span></td>
+            <td>{{ p.title }}</td>
             <td><a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a></td>
             <td>{{ p.layout }}</td>
-            <td>{{ p.path }}</td>            
+            <td><span title="{% for v in p %}{% if v[0] == "content" or v[0] == "excerpt" %}{% continue %}{% endif %}{{ v[0] }} = {{ v[1] }}; {% endfor %}">{{ p.path }}</span></td>            
         </tr>
     {% endfor %}
 
