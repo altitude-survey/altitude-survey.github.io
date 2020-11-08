@@ -19,7 +19,7 @@
         x.src && x.complete ?
             fitOne(
               x.parentElement.querySelector("h4"),
-               'exist ' + (new URL(x.src)).pathname
+               'complete ' + (new URL(x.src)).pathname
                )
           : x.addEventListener("load", e =>
               fitOne(
