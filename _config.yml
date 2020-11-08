@@ -12,6 +12,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+optional_front_matter:
+  remove_originals: true
+
 theme: ""
 debugpagevars: false # показывает переменные в тексте страничек
 

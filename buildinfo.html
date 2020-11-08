@@ -10,15 +10,24 @@ jekyll: {{ jekyll | jsonify }}<br/>
 
 <h3>Pages:</h3>
 <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
+    <th>
+        <td>cat, main, submenu</td>
+        <td>sortid</td>
+        <td>title</td>
+        <td>url</td>
+        <td>layout</td>
+        <td>path</td>
+    </th>
     {% assign sort_pages = site.pages | sort: "url" || sort: "cat" | sort: "sortid" %}
     {% for p in sort_pages %}
         <tr>
             <td>
-                {{ p.cat }}
-                {% if p.main %}☑{% endif %}
-                {% if p.submenu %}🍔{% endif %}
+                <span title="cat (категория)"></span>{{ p.cat }}</span>
+                {% if p.main %}<span title="main (главное меню)">☑</span>
+                    {% if p.submenu %}<span title="submenu (подменю)">🍔</span> {% endif %}
+                {% endif %}
             </td>
-            <td>{{ p.sortid }}{%- if p.sitemap != false -%}{%- else -%}👻{%- endif -%}</td>
+            <td><span title="sortid (сортировка для меню)">{{ p.sortid }}</span>{%- if p.sitemap != false -%}{%- else -%}<span title="sitemap (удалено из поиска)">👻</span>{%- endif -%}</td>
             <td>{{ p.title }}</td>
             <td><a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a></td>
             <td>{{ p.layout }}</td>
@@ -65,7 +74,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <ul>
 {% for d in site.documents %}
 <li>
-    <a href="{{ d.url}}?{{site.time | date: '%s' }}">{{ d.url}}</a>
+    <a href="{{ d.url}}?{{site.time | date: '%s' }}">{{ d.url}}</a> {{ d.collection } - {{ d.title }}
     <details>
             <summary></summary>
             <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
@@ -76,19 +85,18 @@ jekyll: {{ jekyll | jsonify }}<br/>
             </table>
     </details>
 </li>
-
-
-
-
 {% endfor %}
 </ul>
 
 <h3>Static files:</h3>
-<ul>
-    {% for file in site.static_files %}
-        <li><a href="{{ file.path}}">{{ file.path}}</a></li>
+<ol>
+    {% for f in site.static_files %}
+        <li>
+            <a href="{{ f.path}}">{{ f.path}}</a>
+            {% for p in f %} {{ p }} = {{ f[p] }}&nbsp;&semi;&nbsp;{% endfor %}
+        </li>
     {% endfor %}
-</ul>
+</ol>
 
 <h3>Site data:</h3>
 {{ site.data | jsonify }}   
@@ -99,11 +107,11 @@ jekyll: {{ jekyll | jsonify }}<br/>
     {% for col in site.collections %}
         <li>{{ col.label }} - {{ col.relative_directory }} - {{ col.output }}
             <br/>DOCS:
-            <ul>
+            <ol>
                 {% for d in col.docs %}
                     <li><a href="{{ d.url}}">{{ d.url}}</a> &ndash; {{ d.title }}</li>
                 {% endfor %}
-            </ul>
+            </ol>
             FILES:
             <ul>
                 {% for f in col.files %}
