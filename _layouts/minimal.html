@@ -5,14 +5,18 @@
     <link rel="stylesheet" href="/css/uikit.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{page.title}}</title>
+    <style>
+        td span {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="uk-section uk-section-default uk-section-small">
         <div class="uk-container">
             {{ content }}
         </div>
-    </div>
-    
+    </div>    
 </body>
 </html>
