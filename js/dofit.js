@@ -16,7 +16,7 @@
     }
     document.querySelectorAll(".uk-card-media-top > img")
       .forEach(x =>
-        x.src ?
+        x.src && x.complete ?
             fitOne(
               x.parentElement.querySelector("h4"),
                'exist ' + (new URL(x.src)).pathname
