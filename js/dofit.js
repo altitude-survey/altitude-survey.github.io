@@ -1,15 +1,18 @@
 (function(x) {
   let script = document.createElement("script");
-  script.src = "/js/textFit.min.js";
+  script.src = "/js/textFit.min.js";  
   script.onload = (e) => {
-    function doFit(ev) {
+    function logoAnchSetWidh() {
+      let la = document.getElementById("logo-anch");
+      la.style.width = la.offsetHeight + "px";
+    }
+    function doFitAll(ev) {
       console.log("all Fit on: ",ev.type);
       textFit(document.querySelectorAll(".uk-overlay h4"));
-      let la=document.getElementById("logo-anch");
-      la.style.width=la.offsetHeight+'px';
+      logoAnchSetWidh();
     }
-    window.addEventListener("resize", doFit);
-    window.addEventListener('orientationchange', doFit);
+    window.addEventListener("resize", doFitAll);
+    window.addEventListener('orientationchange', doFitAll);
     function fitOne(el,reason){
       textFit(el);
       console.log(`Fit ${reason}`);
@@ -28,11 +31,11 @@
               )
             )
       );
-    // if (document.readyState == "loading") {
-    //   document.addEventListener("DOMContentLoaded", doFit);
-    // } else {
-    //   doFit(e);
-    // }
+    if (document.readyState == "loading") {
+      document.addEventListener("DOMContentLoaded", logoAnchSetWidh)
+    } else {
+      logoAnchSetWidh();
+    }
   };
   document.head.append(script);
 })();
