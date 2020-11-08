@@ -74,7 +74,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
 <ul>
 {% for d in site.documents %}
 <li>
-    <a href="{{ d.url}}?{{site.time | date: '%s' }}">{{ d.url}}</a> {{ d.collection } - {{ d.title }}
+    <a href="{{ d.url}}?{{site.time | date: '%s' }}">{{ d.url}}</a> {{ d.collection }} - {{ d.title }}
     <details>
             <summary></summary>
             <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
