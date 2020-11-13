@@ -41,6 +41,9 @@ body,html {
   scroll-padding-top: 80px; /* height of sticky header */
 }
 
+h2,h3,h4,h5 {
+  transition: background-color 500ms; 
+}
 :target {
   background-color: hsl(22deg 100% 85%);
 }
