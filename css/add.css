@@ -36,3 +36,11 @@ em {
 body > div.uk-sticky.uk-sticky-fixed > nav {
   box-shadow: 0 14px 25px rgba(0,0,0,.16);
 }
+
+body,html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
+:target {
+  background-color: hsl(22deg 100% 85%);
+}
