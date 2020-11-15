@@ -36,19 +36,17 @@ submenu: false
 - антенно-мачтовые и сооружения.
 " %}
 
-
-
-###### &nbsp;  
 <!-- тут была кнопка -->
-{% include el-anim-contact-button.html %}
+{% include el-anim-contact-button.html %} 
 
-{% include el-img.html name="0/0.2.jpg" align="left" width="1/3" %}
+{% include el-horizcard.html img="0/0.2.jpg" imgside="right" inner="
 #### **Объекты гражданского строительства:**   
 - Высотные здания и сооружения  
 - жилые дома  
 - общественные здания  
 - торговые комплексы  
-- склады  
+- склады 
+" %} 
 
 ###### &nbsp;  
 <!-- тут была кнопка -->
