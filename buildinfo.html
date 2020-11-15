@@ -31,7 +31,7 @@ jekyll: {{ jekyll | jsonify }}<br/>
             <td>{{ p.title }}</td>
             <td><a href="{{ p.url}}?{{site.time | date: '%s' }}">{{ p.url}}</a></td>
             <td>{{ p.layout }}</td>
-            <td><span title="{% for v in p %}{% if v[0] == "content" or v[0] == "excerpt" %}{% continue %}{% endif %}{{ v[0] }}: {{ v[1] }} &#13; {% endfor %}">{{ p.path }}</span></td>            
+            <td><span title="{% for v in p %}{% if v[0] == "content" or v[0] == "excerpt" %}{% continue %}{% endif %}{{ v[0] }}: {{ v[1] }}&#13;{% endfor %}">{{ p.path }}</span></td>            
         </tr>
     {% endfor %}
 
