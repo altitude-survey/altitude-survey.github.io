@@ -5,21 +5,23 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {%- assign sort_pages = site.pages | sort: "sortid"  -%}
+    {%- assign sort_pages = site.pages | sort: "cat"  -%}
     {%- for p in sort_pages -%}
         {%- if p.title != nil and p.cat and p.sitemap != false -%}
         <url>
             <loc>{{ site.url }}{{ p.url | uri_escape }}</loc>
             <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-             <priority>
-             {%- if p.cat == 1 -%}
-                1.0
-             {%- elsif p.main -%}
-                0.9
-             {%- else -%}
-                0.75
-             {%- endif -%}
-             </priority>
+            <priority>
+                {%- if p.cat == 0 -%}
+                    1.0
+                {%- elsif p.main and p.cat <= 3 -%}
+                    0.9
+                {%- elsif p.main and p.cat > 3 -%}
+                    0.8
+                {%- else -%}
+                    0.7
+                {%- endif -%}
+            </priority>
         </url>
         {%- endif -%}
     {%- endfor -%}
@@ -28,7 +30,7 @@ sitemap: false
         <url>
             <loc>{{ site.url }}{{ d.url | uri_escape }}</loc>
             <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-             <priority>0.5</priority>
+             <priority>0.6</priority>
         </url>
         {%- endif -%}
     {%- endfor -%}  
