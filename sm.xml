@@ -14,14 +14,12 @@ sitemap: false
         </url>
         {%- endif -%}
     {%- endfor -%}
-
-     {%- for d in site.documents -%}
-        {%- if d.sitemap != false -%
+    {%- for d in site.documents -%}
+        {%- if d.sitemap != false -%}
         <url>
             <loc>{{ site.url }}{{ d.url | uri_escape }}</loc>
             <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         </url>
         {%- endif -%}
-    {%- endfor -%}
-  
+    {%- endfor -%}  
 </urlset>
