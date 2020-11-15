@@ -11,7 +11,7 @@ sitemap: false
         <url>
             <loc>{{ site.url }}{{ p.url | uri_escape }}</loc>
             <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        </url>           
+        </url>
         {%- endif -%}
     {%- endfor -%}
 
@@ -20,7 +20,7 @@ sitemap: false
         <url>
             <loc>{{ site.url }}{{ d.url | uri_escape }}</loc>
             <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        </url>   }
+        </url>
         {%- endif -%}
     {%- endfor -%}
   
