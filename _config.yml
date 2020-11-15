@@ -9,7 +9,6 @@ sass:
   sourcemap: true
 
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 optional_front_matter:
@@ -17,8 +16,6 @@ optional_front_matter:
 
 theme: ""
 debugpagevars: false # показывает переменные в тексте страничек
-
-
 
 collections:
   portfolio:
