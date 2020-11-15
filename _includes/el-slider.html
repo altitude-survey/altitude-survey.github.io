@@ -1,5 +1,5 @@
 
-{% assign galpath = 'img/gal' | append: page.sortid %}
+{% assign galpath = 'img/gal' | append: page.sortid | append: page.galpath %}
 <!-- >{{ galpath }}< -->
 <div uk-slider="autoplay: true;autoplay-interval: 1500">
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
