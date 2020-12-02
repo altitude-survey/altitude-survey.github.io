@@ -11,22 +11,22 @@
     if (e.ctrlKey && e.code.startsWith("Digit")) {
       e.preventDefault();
       //document.body.style.backgroundImage = window.getComputedStyle(document.body).backgroundImage.replace(/(?<=_)\d(?=\.jpg)/i, e.key);
-      let old = document.querySelector(x.selector),
-          new = document.createElement("link");
-      new.rel = 'stylesheet';
-      new.onload = (e) =>
+      let o = document.querySelector(x.selector),
+          n = document.createElement("link");
+      n.rel = 'stylesheet';
+      n.onload = (e) =>
         UIkit.notification({
           message: 'style № '+e.target.href.substr(-5,1) + " ok!",
           status: "primary",
           pos: "bottom-right",
           timeout: 1000,
         });
-      new.setAttribute(
+      n.setAttribute(
         x.attrName,
         `/css/sw-${e.key}.css` 
       );
-      old && old.remove();
-      document.head.append(new);
+      o && o.remove();
+      document.head.append(n);
     }
   });
 })({
