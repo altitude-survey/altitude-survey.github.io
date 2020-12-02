@@ -4,14 +4,14 @@ nav.uk-navbar-container.uk-navbar{
     background-size: contain;
 }
 
-.uk-navbar-nav>li>a {
+nav.uk-navbar-nav>li>a {
   font-size: large;
     font-weight: 600;
     color:black;
     text-shadow: 2px 2px 5px #999;
 }
 
-.uk-navbar-nav>li:hover {
+nav.uk-navbar-nav>li:hover {
   color: #333;
   text-shadow: 5px 5px 9px #999;
 }
