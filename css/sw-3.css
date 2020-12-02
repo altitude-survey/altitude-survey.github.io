@@ -17,5 +17,5 @@ nav.uk-navbar-container.uk-navbar  li:hover {
 
 .uk-subnav-pill>.uk-active>a {
   background-color: #dbe5f0;
-  /* color: #333; */
+  color: #333;
 }
