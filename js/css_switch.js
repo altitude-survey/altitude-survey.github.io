@@ -11,18 +11,22 @@
     if (e.ctrlKey && e.code.startsWith("Digit")) {
       e.preventDefault();
       //document.body.style.backgroundImage = window.getComputedStyle(document.body).backgroundImage.replace(/(?<=_)\d(?=\.jpg)/i, e.key);
-      let tag = document.querySelector(x.selector);
-      tag.onload = (e) =>
+      let old = document.querySelector(x.selector),
+          new = document.createElement("link");
+      new.rel = 'stylesheet';
+      new.onload = (e) =>
         UIkit.notification({
           message: 'style № '+e.target.href.substr(-5,1) + " ok!",
           status: "primary",
           pos: "bottom-right",
           timeout: 1000,
         });
-      tag.setAttribute(
+      new.setAttribute(
         x.attrName,
-        tag.getAttribute(x.attrName).replace(x.regexp, e.key)
+        `/css/sw-${e.key}.css` 
       );
+      old && old.remove();
+      document.head.append(new);
     }
   });
 })({
