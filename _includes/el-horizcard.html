@@ -1,5 +1,7 @@
-<div class="uk-card uk-card-default uk-child-width-1-2 uk-grid" uk-grid>
-    <div class="{% if include.imgonright %} uk-flex-last uk-card-media-right {% else %} uk-card-media-left {% endif %} uk-cover-container uk-background-cover" {% if include.img %} data-src="/img/{{ include.img }}" uk-img {% endif %}></div>
+<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid uk-grid-collapse" uk-grid>
+    <div class="{% if include.imgonright %} uk-flex-last uk-card-media-right {% else %} uk-card-media-left {% endif %} uk-cover-container uk-background-cover" {% if include.img %} data-src="/img/{{ include.img }}" uk-img {% endif %}>
+        <canvas></canvas>
+    </div>
     <div>
         <div class="uk-card-body">
             {{ include.inner | markdownify}}
