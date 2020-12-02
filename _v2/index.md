@@ -21,9 +21,9 @@ submenu: false
 
 {% include i-sect-end-start.html sectclass="uk-section-muted" %}
 
-{% include el-horizcard.html img="0/0.1.jpg" inner="
+{%- include el-horizcard.html inner="
 ## Где проводится обследования:
-" %}
+" -%}
 
 {% include el-horizcard.html img="0/0.1.jpg" inner="
 #### Объекты промышленного строительства:     
