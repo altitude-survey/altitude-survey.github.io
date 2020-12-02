@@ -14,7 +14,7 @@
       let tag = document.querySelector(x.selector);
       tag.onload = (e) =>
         UIkit.notification({
-          message: 'style № '+e.href.substr(-5,1) + " ok!",
+          message: 'style № '+e.target.href.substr(-5,1) + " ok!",
           status: "primary",
           pos: "bottom-right",
           timeout: 1000,
