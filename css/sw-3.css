@@ -10,9 +10,12 @@ nav.uk-navbar-container.uk-navbar  li:hover {
 }
 
 .uk-navbar-nav > li.chevron-down {
-  border-width: 2px 2px 0;
+  border-width: 3px 2px 0;
   border-style: solid;
-  border-color:  #1e87f0;
-
+  border-color:  #dbe5f0;
 }
+
+.uk-subnav-pill>.uk-active>a {
+  background-color: #dbe5f0;
+  /* color: #333; */
 }
