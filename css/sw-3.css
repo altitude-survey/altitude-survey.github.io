@@ -6,8 +6,7 @@ nav.uk-navbar-container.uk-navbar  li:hover {
   }
 
 .uk-navbar-nav > li.uk-active {
-  outline: 1px solid #1e87f0;
-  outline-offset: -1px;
+  background-color: #dbe5f0;
 }
 
 .uk-navbar-nav > li.chevron-down {
