@@ -31,7 +31,7 @@
                     {%- if p.main -%}
                     {%- capture pcat -%}{{ p.cat }}{%- endcapture -%}
                         <li class="
-                            {% if p.url == page.url %} uk-active {%- elseif p.cat == page.cat -%} chevron-down {%- endif -%}
+                            {% if p.url == page.url %} uk-active {% elsif p.cat == page.cat %} chevron-down {% endif %}
                             " 
                             data-priority="{{ site.data.var.menu_priority[pcat] }}"
                             >
