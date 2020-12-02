@@ -1,0 +1,19 @@
+﻿nav.uk-navbar-container.uk-navbar{
+  background-color: #c5d6e8;}
+
+nav.uk-navbar-container.uk-navbar  li:hover {
+  background-color: #d8eafc;
+  }
+
+.uk-navbar-nav > li.uk-active {
+  outline: 1px solid #1e87f0;
+  outline-offset: -1px;
+}
+
+.uk-navbar-nav > li.chevron-down {
+  border-width: 2px 2px 0;
+  border-style: solid;
+  border-color:  #1e87f0;
+
+}
+}

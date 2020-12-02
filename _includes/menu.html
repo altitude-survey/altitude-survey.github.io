@@ -30,13 +30,11 @@
                     {%- assign menu_title = upnd_title | split: " " -%}
                     {%- if p.main -%}
                     {%- capture pcat -%}{{ p.cat }}{%- endcapture -%}
-
-                        {% if p.url == page.url %}
-                            <li class="uk-active" data-priority="{{ site.data.var.menu_priority[pcat] }}">  
-                        {%- else -%}
-                            <li data-priority="{{ site.data.var.menu_priority[pcat] }}">  
-                        {%- endif -%}
-                                                  
+                        <li class="
+                            {% if p.url == page.url %} uk-active {%- elseif p.cat == page.cat -%} chevron-down {%- endif -%}
+                            " 
+                            data-priority="{{ site.data.var.menu_priority[pcat] }}"
+                            >
                             <a href="{{ p.url }}" class="uk-button-text">
                                 {%- if p.cat == 0 -%}
                                     <span uk-icon="home"></span>
