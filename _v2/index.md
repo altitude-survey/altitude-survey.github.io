@@ -98,6 +98,6 @@ submenu: false
 6. СП {% include el-pdf.html text="64.13330.2017" name="СП 64.13330.2017.pdf" %} «СНиП II-25-80 Деревянные конструкции»;    
 7. СП {% include el-pdf.html text="13-102—2003" name="СП 13-102—2003.pdf" %} «Правила обследования несущих конструкций зданий и сооружений».    
 8. Правила по охране труда при работе на высоте от 28 марта 2014 г. {% include el-pdf.html text="N 155н" name="N 155н.pdf" %};
-{: .uk-list .uk-list-decimal}
+{: .uk-list .uk-list-decimal .uk-list-primary .uk-list-divider}
 
 {% include el-fixed-contact-button.html %}
