@@ -1,7 +1,10 @@
 <div class="uk-animation-toggle">
     <a href="{{ include.url }}" class="uk-card uk-card-default uk-card-hover uk-card-small uk-animation-slide-top-small">        
         <div class="uk-card-media-top uk-inline">
-            <img data-src="{{ include.img }}" uk-img>
+            <img data-src="{{ include.img }}" class="uk-visible@m" uk-img>
+            <div class="uk-hidden@m uk-background-cover" data-src="{{ include.img }}" uk-img>      
+                <canvas width="960" height="320">
+            </div>
             <div class="uk-overlay uk-light uk-overlay-primary uk-position-bottom uk-text-nowrap uk-text-center">
                 <h4> {{ include.header }} </h4>
             </div>
