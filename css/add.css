@@ -1,56 +1,61 @@
-nav.uk-navbar-container.uk-navbar{
+nav.uk-navbar-container.uk-navbar {
   background-image: url(/img/eagle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-nav .uk-navbar-nav>li>a {
+nav .uk-navbar-nav > li > a {
   font-size: large;
-    font-weight: 600;
-    color:black;
-    text-shadow: 2px 2px 5px #999;
+  font-weight: 600;
+}
+nav:hover .uk-navbar-nav > li > a {
+  color: #333;
+  text-shadow: 2px 2px 5px #999;
 }
 
-nav .uk-navbar-nav>li:hover {
-  color: #333;
+nav .uk-navbar-nav > li:hover {
+  color: black;
   text-shadow: 5px 5px 9px #999;
 }
 
-
-p>code {
-   visibility: hidden; 
-   margin-left: 1.5em;
+p > code {
+  visibility: hidden;
+  margin-left: 1.5em;
 }
 
- h6, .clear-both{
-   visibility: hidden;
-   width: 0;
-   height: 0;
-   clear: both;
-   margin: 0;
-   padding: 0;
- }
+h6,
+.clear-both {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
 
-
- .uk-section-muted {
+.uk-section-muted {
   background-color: lightsteelblue;
- }
+}
 
 em {
-  color: #FF7C2F;
+  color: #ff7c2f;
 }
 
 .uk-alert-primary,
 body > div.uk-sticky.uk-sticky-fixed > nav {
-  box-shadow: 0 14px 25px rgba(0,0,0,.16);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
-body,html {
+body,
+html {
   scroll-padding-top: 100px; /* height of sticky header */
 }
 
-h2,h3,h4,h5 {
-  transition: background-color 1000ms; 
+h2,
+h3,
+h4,
+h5 {
+  transition: background-color 1000ms;
 }
 :target {
   background-color: hsl(22deg 100% 85%);
