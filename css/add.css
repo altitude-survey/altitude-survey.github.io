@@ -13,7 +13,7 @@ nav:hover .uk-navbar-nav > li > a {
   text-shadow: 2px 2px 5px #999;
 }
 
-nav .uk-navbar-nav > li:hover {
+nav .uk-navbar-nav > li:hover > a {
   color: black;
   text-shadow: 5px 5px 9px #999;
 }
