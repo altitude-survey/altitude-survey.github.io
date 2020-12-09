@@ -18,6 +18,15 @@ nav .uk-navbar-nav > li:hover > a {
   text-shadow: 5px 5px 9px #999;
 }
 
+
+.uk-subnav.uk-subnav-pill li {
+  font-weight: 600;
+}
+
+.uk-subnav-pill:hover li > a {
+  color: #333;
+}
+
 p > code {
   visibility: hidden;
   margin-left: 1.5em;
@@ -37,8 +46,9 @@ h6,
   background-color: lightsteelblue;
 }
 
-em {
-  color: #ff7c2f;
+em{
+  /* color: #ff7c2f; */
+  color: #c24700;
 }
 
 .uk-alert-primary,

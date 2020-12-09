@@ -17,8 +17,8 @@
       n.onload = (e) =>
         UIkit.notification({
           message: 'style № '+e.target.href.substr(-5,1) + " ok!",
-          status: "primary",
-          pos: "bottom-right",
+          status: "success",
+          pos: "bottom-left",
           timeout: 1000,
         });
       n.setAttribute(
