@@ -26,31 +26,31 @@ contacts:
     label: WhatsApp
     icon: whatsapp
     val: "+7(903)725-31-56"
-    link: https://wa.me/79037253156
+    link: https://wa.me/79636324346
 
-  skype:
-    label: Skype
-    link: skype:username?call
-    val: _
+  # skype:
+  #   label: Skype
+  #   link: skype:username?call
+  #   val: _
 
-  insta:
-    label: Instagram
-    icon: instagram
-    link: https://www.instagram.com/
-    val: _
+  # insta:
+  #   label: Instagram
+  #   icon: instagram
+  #   link: https://www.instagram.com/
+  #   val: _
 
-  sro:
-    label: Регистрационный номер СРО
-    val: 
-    icon: info
+  # sro:
+  #   label: Регистрационный номер СРО
+  #   val: 
+  #   icon: info
 
-  share:
-    label: Поделиться в соц. сетях
-    icon: social
+  # share:
+  #   label: Поделиться в соц. сетях
+  #   icon: social
 
-  links:
-    label: Мы на портале поставщиков
-    icon: forward
+  # links:
+  #   label: Мы на портале поставщиков
+  #   icon: forward
 
 # menu_priority:
 #   '0':  0  # home
