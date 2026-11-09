@@ -14,7 +14,7 @@ plugins:
 optional_front_matter:
   remove_originals: true
 
-theme: ""
+theme: null # без темы; пустая строка "" ломает сборку на GitHub Pages
 debugpagevars: false # показывает переменные в тексте страничек
 
 collections:
