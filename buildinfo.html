@@ -6,19 +6,20 @@ permalink: /_/buildinfo
 ---
 
 build: {{ site.time }}<br/>
+revision: {{ site.github.build_revision }}<br/>
 jekyll: {{ jekyll | jsonify }}<br/>
 
 <h3>Pages:</h3>
 <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
     <tr>
-        <th></td>
+        <th></th>
         <th>sortid</th>
         <th>title</th>
         <th>url</th>
         <th>layout</th>
         <th>path</th>
     </tr>
-    {% assign sort_pages = site.pages | sort: "url" || sort: "cat" | sort: "sortid" %}
+    {% assign sort_pages = site.pages | sort: "url" | sort: "cat" | sort: "sortid" %}
     {% for p in sort_pages %}
         <tr>
             <td>
